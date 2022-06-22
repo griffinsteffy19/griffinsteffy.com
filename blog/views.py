@@ -2,9 +2,11 @@ from email.policy import HTTP
 from random import randrange
 from turtle import pos
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 import random
 from .models import Post
+from django.db.models import Q
+from .forms import NewPostForm
 
 def getRandNum(range):
     return random.randrange(0, range)
@@ -46,5 +48,26 @@ def singlePost(request, post_id):
     start = content.find(find_str, 1, len(content)) + len(find_str)+1
     return render(request, str(post.content)[start:], {'post': post})
 
-def test(request):
-    return render(request, 'blog/blog_template.html')
+def search(request):
+    # if this is a POST request we need to process the form data
+    if request.method == 'GET':
+        search_filter = request.GET.get("search_text")
+        if search_filter == 'login':
+            return HttpResponseRedirect("/accounts/login/")
+        search_posts_list = Post.objects.filter(Q(title__contains=search_filter) | Q(tags__slug=search_filter))
+        if search_posts_list.count() > 0:
+            return render(request, 'blog/search_results.html', {'search_results': search_posts_list})
+
+    return postList(request)
+
+def addpost(request):
+    if request.method == 'GET':
+        form = NewPostForm()
+        return render(request, 'blog/addpost.html', {'form': form})
+    else:
+        form = NewPostForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+        else:
+            print("form not valid")
+    return HttpResponseRedirect("/")
