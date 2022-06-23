@@ -17,15 +17,12 @@ def first(request):
 
 def randomPost(request):
     posts = Post.objects.all()
-    print(len(posts))
     rndm = getRandNum(len(posts))
-    print(rndm)
     redirect_str = str('/blog/%s/' % posts[rndm].id)
     return redirect(redirect_str)
 
 def postList(request):
     latest_post_list = Post.objects.order_by('-pub_date')
-    print (type (latest_post_list))
     featured_post = latest_post_list[0]
     found_featured = False
     for p in latest_post_list:
