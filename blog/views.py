@@ -22,19 +22,21 @@ def randomPost(request):
 
 def postList(request):
     latest_post_list = Post.objects.order_by('-pub_date')
-    featured_post = latest_post_list[0]
-    found_featured = False
-    for p in latest_post_list:
-        if p.is_featured:
-            featured_post = p
-            break
-    latest_post_list.exclude(id=featured_post.id)
-                    
-    context = {
-        'latest_post_list': latest_post_list,
-        'featured_post' : featured_post,
-        'featured_post_id': featured_post.id
-    }
+    if(latest_post_list.count() > 0):
+        featured_post = latest_post_list[0]
+        found_featured = False
+        for p in latest_post_list:
+            if p.is_featured:
+                featured_post = p
+                break
+        latest_post_list.exclude(id=featured_post.id)
+        context = {
+            'latest_post_list': latest_post_list,
+            'featured_post' : featured_post,
+            'featured_post_id': featured_post.id
+        }
+    else:
+        context = {}
     return render(request, 'blog/list.html', context)
 
 def singlePost(request, post_id):
