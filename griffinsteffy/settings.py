@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 import sys
-import d_database_url
+import dj_database_url
 from django.core.management.utils import get_random_secret_key
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +26,23 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "False") == "True"
+DEBUG = os.getenv("DEBUG", False) ==  True
+
+if DEBUG:
+    from . import dev
+    devAWS_ACCESS_KEY_ID = dev.AWS_ACCESS_KEY_ID
+    devAWS_SECRET_ACCESS_KEY = dev.AWS_SECRET_ACCESS_KEY
+    devAWS_STORAGE_BUCKET_NAME = dev.AWS_STORAGE_BUCKET_NAME
+    devAWS_S3_ENDPOINT_URL = dev.AWS_S3_ENDPOINT_URL
+    devAWS_S3_CUSTOM_DOMAIN = dev.AWS_S3_CUSTOM_DOMAIN
+else:
+    devAWS_ACCESS_KEY_ID = "DEBUG NOT ENABLED"
+    devAWS_SECRET_ACCESS_KEY = "DEBUG NOT ENABLED"
+    devAWS_STORAGE_BUCKET_NAME = "DEBUG NOT ENABLED"
+    devAWS_S3_ENDPOINT_URL = "DEBUG NOT ENABLED"
+    devAWS_S3_CUSTOM_DOMAIN = "DEBUG NOT ENABLED"
+
+
 
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 
@@ -45,6 +61,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -134,12 +151,40 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+if DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+    STATIC_URL = "/static/"
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
+
+
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+else:
+    AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID", devAWS_ACCESS_KEY_ID)
+    AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY", devAWS_SECRET_ACCESS_KEY)
+
+    AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME", devAWS_STORAGE_BUCKET_NAME)
+    AWS_S3_ENDPOINT_URL = os.getenv("AWS_S3_ENDPOINT_URL", devAWS_S3_ENDPOINT_URL)
+    # I enabled the CDN, so you get a custom domain. Use the end point in the AWS_S3_CUSTOM_DOMAIN setting. 
+    AWS_S3_CUSTOM_DOMAIN = os.getenv("AWS_S3_CUSTOM_DOMAIN", devAWS_S3_CUSTOM_DOMAIN)
+    AWS_S3_ADDRESSING_STYLE = "virtual" 
+    AWS_S3_OBJECT_PARAMETERS = {
+        'CacheControl': 'max-age=86400',
+    }
+
+    AWS_DEFAULT_ACL = 'public-read'
+
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'  
+
+    # Use AWS_S3_ENDPOINT_URL here if you haven't enabled the CDN and got a custom domain. 
+    STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'static')
+    STATIC_ROOT = 'static/'
+
+    MEDIA_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'media')
+    MEDIA_ROOT = 'media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
