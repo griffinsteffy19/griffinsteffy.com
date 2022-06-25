@@ -1,4 +1,5 @@
 from email.policy import HTTP
+from multiprocessing import context
 from random import randrange
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse, HttpResponseRedirect
@@ -7,6 +8,12 @@ from .models import Post
 from django.db.models import Q
 from .forms import NewPostForm
 from griffinsteffy import settings
+
+from about import aboutme
+
+sitewide = {
+    'about': aboutme.about
+}
 
 def getRandNum(range):
     return random.randrange(0, range)
@@ -40,15 +47,18 @@ def postList(request):
             'media_url': settings.MEDIA_URL,
         }
     else:
-        context = {}
+        context = sitewide
     return render(request, 'blog/list.html', context)
 
 def singlePost(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
     content = str(post.content)
-    find_str = 'templates'
-    start = content.find(find_str, 1, len(content)) + len(find_str)+1
-    return render(request, str(post.content)[start:], {'post': post})
+    context = {
+        'post': post,
+        'media_url': settings.MEDIA_URL,
+        'sitewide': sitewide
+    }
+    return render(request, content, context)
 
 def search(request):
     # if this is a POST request we need to process the form data
@@ -58,15 +68,23 @@ def search(request):
             return HttpResponseRedirect("/accounts/login/")
         search_posts_list = Post.objects.filter(Q(title__contains=search_filter) | Q(tags__slug=search_filter))
         if search_posts_list.count() > 0:
-            return render(request, 'blog/search_results.html', {'search_results': search_posts_list, 
-            'media_url': settings.MEDIA_URL})
+            context = {
+                'search_results': search_posts_list, 
+                'media_url': settings.MEDIA_URL,
+                'sitewide': sitewide
+                }
+            return render(request, 'blog/search_results.html', context)
 
     return postList(request)
 
 def addpost(request):
     if request.method == 'GET':
         form = NewPostForm()
-        return render(request, 'blog/addpost.html', {'form': form})
+        context = {
+                'form': form,
+                'sitewide': sitewide
+                }
+        return render(request, 'blog/addpost.html', context)
     else:
         form = NewPostForm(request.POST, request.FILES)
         if form.is_valid():
