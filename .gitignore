@@ -129,4 +129,7 @@ dmypy.json
 .pyre/
 
 # App specific
- media/
+media/thumbnails/*
+media/templates/posts/*
+
+griffinsteffy/dev.py
