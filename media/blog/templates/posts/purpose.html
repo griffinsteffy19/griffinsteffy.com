@@ -2,90 +2,40 @@
 {% extends 'blog/post.html' %}
 {% block post %}
 
-<main class="container mb-auto">
-<div class="row g-5">
-    <div class="col-md-8">
-        <article class="blog-post">
-            <h2 class="blog-post-title mb-1">{{post.title}}</h2>
-            <p class="blog-post-meta">{{post.pub_date|date:"M d, Y"}} by <a href="/">{{sitewide.about.name}}</a></p>
+<article class="blog-post">
+    <h2 class="blog-post-title mb-1">{{post.title}}</h2>
+    <p class="blog-post-meta">{{post.pub_date|date:"M d, Y"}} by <a href="/">{{sitewide.about.name}}</a></p>
 
-            <p>{{post.featured_preview}}</p>
-            <hr>
+    <p>{{post.featured_preview}}</p>
+    <hr>
 
-            <h3>The Idea Behind It</h3>
-            </p>If there is one thing you should know about me is that I am not a confident writer. 
-                As I wrote papers during school, I tended to proctrastinate (maybe like yourself). 
-                However, I rarely waited till the last minute due to a lack of an idea. Sometimes 
-                it was no motivation, and seeing that I became an engineer, I bet you could have 
-                figured that one out.
+    <h3>The Idea Behind It</h3>
+    </p>If there is one thing you should know about me is that I am not a confident writer.
+    As I wrote papers during school, I tended to proctrastinate (maybe like yourself).
+    However, I rarely waited till the last minute due to a lack of an idea. Sometimes
+    it was no motivation, and seeing that I became an engineer, I bet you could have
+    figured that one out.
 
-                That being said, I do believe the larger blocker for me was my confidence in what I put on paper.
-                I had (and still do have) this notion in my mind that I am not capable of writing something worth
-                sharing on paper.
-                
-                Thus this blog is born...
-                
-                I don't have a specific interest in improving my writing, but essentially I have read some things
-                online that improving writing can improve knowledge, plus I need an outlet for my thoughts, and this seems
-                like a private place to start. 
-            </p>
-            <h3>What can you expect from me?</h3>
-            <p>
-                My goals for this is to publish 52 times in the next 52 weeks. Ideally this looks like a weekly upload, 
-                but I'm starting with a low bar that I can consistently jump over, even when I lack motivation. There are 
-                also no constraints on content. One week you might get an insightful writing piece, and the next I'll talk 
-                about a cool programming accomplishment I made, who knows what is in store for all of us. the main goal is 
-                for this platform serve as a way for me to let me creative juices flow, but give motivation to be creative 
-                on an average of a weekly basis. The worst thing that can happen to a creative is that they stop creating. 
-                Let's not let that happen here.
-            </p>
-        </article>
+    That being said, I do believe the larger blocker for me was my confidence in what I put on paper.
+    I had (and still do have) this notion in my mind that I am not capable of writing something worth
+    sharing on paper.
 
-        <nav class="blog-pagination" aria-label="Pagination">
-            <a class="btn btn-outline-secondary rounded-pill disabled">Older</a>
-            <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
-        </nav>
+    Thus this blog is born...
 
-    </div>
+    I don't have a specific interest in improving my writing, but essentially I have read some things
+    online that improving writing can improve knowledge, plus I need an outlet for my thoughts, and this seems
+    like a private place to start.
+    </p>
+    <h3>What can you expect from me?</h3>
+    <p>
+        My goals for this is to publish 52 times in the next 52 weeks. Ideally this looks like a weekly upload,
+        but I'm starting with a low bar that I can consistently jump over, even when I lack motivation. There are
+        also no constraints on content. One week you might get an insightful writing piece, and the next I'll talk
+        about a cool programming accomplishment I made, who knows what is in store for all of us. the main goal is
+        for this platform serve as a way for me to let me creative juices flow, but give motivation to be creative
+        on an average of a weekly basis. The worst thing that can happen to a creative is that they stop creating.
+        Let's not let that happen here.
+    </p>
+</article>
 
-    <div class="col-md-4">
-        <div class="position-sticky" style="top: 2rem;">
-            <div class="p-0 mb-3 rounded">
-                <img width="95%" height="250" src="{{media_url}}{{post.thumbnail}}"/>
-            </div>
-            <div class="p-4 mb-3 bg-light rounded">
-                <h4 class="fst-italic">About</h4>
-                <p class="mb-0">{{sitewide.about.preview}}</p>
-            </div>
-
-            <div class="p-4">
-                <h4 class="fst-italic">Archives</h4>
-                <ol class="list-unstyled mb-0">
-                    <li><a href="#">March 2021</a></li>
-                    <li><a href="#">February 2021</a></li>
-                    <li><a href="#">January 2021</a></li>
-                    <li><a href="#">December 2020</a></li>
-                    <li><a href="#">November 2020</a></li>
-                    <li><a href="#">October 2020</a></li>
-                    <li><a href="#">September 2020</a></li>
-                    <li><a href="#">August 2020</a></li>
-                    <li><a href="#">July 2020</a></li>
-                    <li><a href="#">June 2020</a></li>
-                    <li><a href="#">May 2020</a></li>
-                    <li><a href="#">April 2020</a></li>
-                </ol>
-            </div>
-
-            <div class="p-4">
-                <h4 class="fst-italic">Elsewhere</h4>
-                <ol class="list-unstyled">
-                    <li><a href="{{sitewide.about.instagram}}">Instagram</a></li>
-                    <li><a href="{{sitewide.about.youtube}}">Youtube</a></li>
-                    <li><a href="{{sitewide.about.linkedin}}">LinkedIn</a></li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</div>
-</main>
 {% endblock %}
