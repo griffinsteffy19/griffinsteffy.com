@@ -58,6 +58,7 @@ def singlePost(request, post_id):
         'media_url': settings.MEDIA_URL,
         'sitewide': sitewide
     }
+
     return render(request, content, context)
 
 def search(request):
