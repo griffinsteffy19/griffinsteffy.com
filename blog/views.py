@@ -12,7 +12,8 @@ from griffinsteffy import settings
 from about import aboutme
 
 sitewide = {
-    'about': aboutme.about
+    'about': aboutme.about,
+    'media_url': settings.MEDIA_URL,
 }
 
 def getRandNum(range):
@@ -44,7 +45,7 @@ def postList(request):
             'latest_post_list': latest_post_list,
             'featured_post' : featured_post,
             'featured_post_id': feature_post_id,
-            'media_url': settings.MEDIA_URL,
+            'sitewide': sitewide
         }
     else:
         context = sitewide
@@ -55,7 +56,6 @@ def singlePost(request, post_id):
     content = str(post.content)
     context = {
         'post': post,
-        'media_url': settings.MEDIA_URL,
         'sitewide': sitewide
     }
 
@@ -71,7 +71,6 @@ def search(request):
         if search_posts_list.count() > 0:
             context = {
                 'search_results': search_posts_list, 
-                'media_url': settings.MEDIA_URL,
                 'sitewide': sitewide
                 }
             return render(request, 'blog/search_results.html', context)
