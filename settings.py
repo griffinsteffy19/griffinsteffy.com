@@ -150,35 +150,40 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID", devAWS_ACCESS_KEY_ID)
-AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY", devAWS_SECRET_ACCESS_KEY)
 
-AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME", devAWS_STORAGE_BUCKET_NAME)
-AWS_S3_ENDPOINT_URL = os.getenv("AWS_STORAGE_BUCKET_NAME", devAWS_S3_ENDPOINT_URL)
-# I enabled the CDN, so you get a custom domain. Use the end point in the AWS_S3_CUSTOM_DOMAIN setting. 
-AWS_S3_CUSTOM_DOMAIN = os.getenv("AWS_S3_CUSTOM_DOMAIN", devAWS_S3_CUSTOM_DOMAIN)
-AWS_S3_ADDRESSING_STYLE = "virtual" 
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',
-}
-
-AWS_DEFAULT_ACL = 'public-read'
-
-STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-
-# Use AWS_S3_ENDPOINT_URL here if you haven't enabled the CDN and got a custom domain. 
 if DEBUG:
-    static_slug='debugStatic'
-    media_slug='debugMedia'
-else:
-    static_slug='static'
-    media_slug='media'
-STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, static_slug)
-STATIC_ROOT = static_slug+'/'
+    STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+    STATIC_URL = "/static/"
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
-MEDIA_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, media_slug)
-MEDIA_ROOT = media_slug+'/'
+
+
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+else:
+    AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID", devAWS_ACCESS_KEY_ID)
+    AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY", devAWS_SECRET_ACCESS_KEY)
+
+    AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME", devAWS_STORAGE_BUCKET_NAME)
+    AWS_S3_ENDPOINT_URL = os.getenv("AWS_STORAGE_BUCKET_NAME", devAWS_S3_ENDPOINT_URL)
+    # I enabled the CDN, so you get a custom domain. Use the end point in the AWS_S3_CUSTOM_DOMAIN setting. 
+    AWS_S3_CUSTOM_DOMAIN = os.getenv("AWS_S3_CUSTOM_DOMAIN", devAWS_S3_CUSTOM_DOMAIN)
+    AWS_S3_ADDRESSING_STYLE = "virtual" 
+    AWS_S3_OBJECT_PARAMETERS = {
+        'CacheControl': 'max-age=86400',
+    }
+
+    AWS_DEFAULT_ACL = 'public-read'
+
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+
+    # Use AWS_S3_ENDPOINT_URL here if you haven't enabled the CDN and got a custom domain. 
+    STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'static')
+    STATIC_ROOT = 'static/'
+
+    MEDIA_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'media')
+    MEDIA_ROOT = 'media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
