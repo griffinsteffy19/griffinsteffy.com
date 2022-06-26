@@ -1,0 +1,46 @@
+<!doctype html>
+{% extends 'blog/post.html' %}
+{% block post %}
+
+<article class="blog-post">
+    <h2 class="blog-post-title mb-1">{{post.title}}</h2>
+    <p class="blog-post-meta">{{post.pub_date|date:"M d, Y"}} by <a href="/">{{sitewide.about.name}}</a></p>
+
+    <p>{{post.featured_preview}}</p>
+    <strong class="d-inline-block text-primary">
+        {% for tag in post.tags.all %}
+        <a>{{tag}} </a>
+        {% endfor %}
+    </strong>
+    <hr>
+
+    <h3>The Idea Behind It</h3>
+    </p>If there is one thing you should know about me is that I am not a confident writer.
+    As I wrote papers during school, I tended to proctrastinate (maybe like yourself).
+    However, I rarely waited till the last minute due to a lack of an idea. Sometimes
+    it was no motivation, and seeing that I became an engineer, I bet you could have
+    figured that one out.
+
+    That being said, I do believe the larger blocker for me was my confidence in what I put on paper.
+    I had (and still do have) this notion in my mind that I am not capable of writing something worth
+    sharing on paper.
+
+    Thus this blog is born...
+
+    I don't have a specific interest in improving my writing, but essentially I have read some things
+    online that improving writing can improve knowledge, plus I need an outlet for my thoughts, and this seems
+    like a private place to start.
+    </p>
+    <h3>What can you expect from me?</h3>
+    <p>
+        My goals for this is to publish 52 times in the next 52 weeks. Ideally this looks like a weekly upload,
+        but I'm starting with a low bar that I can consistently jump over, even when I lack motivation. There are
+        also no constraints on content. One week you might get an insightful writing piece, and the next I'll talk
+        about a cool programming accomplishment I made, who knows what is in store for all of us. the main goal is
+        for this platform serve as a way for me to let me creative juices flow, but give motivation to be creative
+        on an average of a weekly basis. The worst thing that can happen to a creative is that they stop creating.
+        Let's not let that happen here.
+    </p>
+</article>
+
+{% endblock %}
