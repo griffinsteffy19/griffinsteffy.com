@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", False) ==  True
+DEBUG = os.getenv("DEBUG", "False") ==  "True"
 
 if DEBUG:
     from . import dev
@@ -35,6 +35,7 @@ if DEBUG:
     devAWS_STORAGE_BUCKET_NAME = dev.AWS_STORAGE_BUCKET_NAME
     devAWS_S3_ENDPOINT_URL = dev.AWS_S3_ENDPOINT_URL
     devAWS_S3_CUSTOM_DOMAIN = dev.AWS_S3_CUSTOM_DOMAIN
+    SECRET_KEY = dev.DJANGO_SECRET_KEY
 else:
     devAWS_ACCESS_KEY_ID = "DEBUG NOT ENABLED"
     devAWS_SECRET_ACCESS_KEY = "DEBUG NOT ENABLED"
@@ -53,6 +54,7 @@ ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split("
 
 INSTALLED_APPS = [
     'blog',
+    'about',
     'taggit',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -80,7 +82,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates')
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'media')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -155,7 +158,7 @@ USE_TZ = True
 if DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
     STATIC_URL = "/static/"
-    STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+    # STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"),)
 
 
 
