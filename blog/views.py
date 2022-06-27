@@ -7,17 +7,16 @@ import random
 from .models import Post
 from django.db.models import Q
 from .forms import NewPostForm
-from griffinsteffy import settings
 
+from griffinsteffy import settings
 from about import aboutme
+
+from .functions import getRandNum, weeks_past
 
 sitewide = {
     'about': aboutme.about,
     'media_url': settings.MEDIA_URL,
 }
-
-def getRandNum(range):
-    return random.randrange(0, range)
 
 def first(request):
     posts = Post.objects.all()
@@ -45,6 +44,7 @@ def postList(request):
             'latest_post_list': latest_post_list,
             'featured_post' : featured_post,
             'featured_post_id': feature_post_id,
+            'weeks_past': weeks_past(latest_post_list[0].pub_date),
             'sitewide': sitewide
         }
     else:
