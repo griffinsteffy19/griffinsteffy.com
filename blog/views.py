@@ -67,7 +67,7 @@ def search(request):
         search_filter = request.GET.get("search_text")
         if search_filter == 'login':
             return HttpResponseRedirect("/accounts/login/")
-        search_posts_list = Post.objects.filter(Q(title__contains=search_filter) | Q(tags__slug=search_filter))
+        search_posts_list = Post.objects.filter(Q(title__contains=search_filter) | Q(tags__slug=search_filter)).distinct()
         if search_posts_list.count() > 0:
             context = {
                 'search_results': search_posts_list, 
