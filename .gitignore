@@ -131,6 +131,6 @@ dmypy.json
 # App specific
 staticfiles/*
 media/thumbnails/*
-media/templates/posts/*
+media/blog/templates/posts/*
 
 griffinsteffy/dev.py
