@@ -4,12 +4,11 @@
 Functions used by the blog app
 """
 
-from datetime import date, timedelta
-from turtle import st
-
+from datetime import date
+from random import randrange
 
 def getRandNum(range):
-    return random.randrange(0, range)
+    return randrange(0, range)
 
 def weeks_past(iso_date):
     start = iso_date.date()

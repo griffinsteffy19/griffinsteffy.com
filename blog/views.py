@@ -1,9 +1,6 @@
 from email.policy import HTTP
-from multiprocessing import context
-from random import randrange
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import HttpResponse, HttpResponseRedirect
-import random
+from django.http import HttpResponseRedirect
 from .models import Post
 from django.db.models import Q
 from .forms import NewPostForm
