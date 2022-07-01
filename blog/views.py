@@ -10,6 +10,9 @@ from about import aboutme
 
 from .functions import getRandNum, weeks_past
 
+from hitcount.models import HitCount
+from hitcount.views import HitCountMixin
+
 sitewide = {
     'about': aboutme.about,
     'media_url': settings.MEDIA_URL,
@@ -50,6 +53,9 @@ def postList(request):
 
 def singlePost(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
+
+    hit_count = HitCount.objects.get_for_object(post)
+    hit_count_response = HitCountMixin.hit_count(request, hit_count)
     content = str(post.content)
     context = {
         'post': post,

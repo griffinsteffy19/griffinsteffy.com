@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'storages',
     'mathfilters',
+    'hitcount',
     'django_cleanup.apps.CleanupConfig', # place last
 ]
 

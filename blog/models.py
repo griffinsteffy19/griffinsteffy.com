@@ -3,7 +3,6 @@ from email.policy import default
 from django.db import models
 from django.utils import timezone
 from taggit.managers import TaggableManager
-from griffinsteffy import settings
 
 LORUM_IPSUM_LONG = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tempor nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices dolor."
 LORUM_IPSUM_SHORT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tempor nisl."
@@ -23,6 +22,3 @@ class Post(models.Model):
     
     def __str__(self):
         return self.title
-    
-    def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
