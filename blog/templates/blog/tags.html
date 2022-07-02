@@ -1,0 +1,8 @@
+<!doctype html>
+<div class="d-inline-block">
+    {% for tag in post.tags.all %}
+    <strong class="{{tag}}-class">
+        <a>{{tag}} </a>
+    </strong>
+    {% endfor %}
+</div>

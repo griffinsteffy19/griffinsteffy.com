@@ -1,23 +1,22 @@
 from email.policy import HTTP
-from multiprocessing import context
-from random import randrange
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import HttpResponse, HttpResponseRedirect
-import random
+from django.http import HttpResponseRedirect
 from .models import Post
 from django.db.models import Q
 from .forms import NewPostForm
-from griffinsteffy import settings
 
+from griffinsteffy import settings
 from about import aboutme
+
+from .functions import getRandNum, weeks_past
+
+from hitcount.models import HitCount
+from hitcount.views import HitCountMixin
 
 sitewide = {
     'about': aboutme.about,
     'media_url': settings.MEDIA_URL,
 }
-
-def getRandNum(range):
-    return random.randrange(0, range)
 
 def first(request):
     posts = Post.objects.all()
@@ -45,6 +44,7 @@ def postList(request):
             'latest_post_list': latest_post_list,
             'featured_post' : featured_post,
             'featured_post_id': feature_post_id,
+            'weeks_past': weeks_past(latest_post_list[0].pub_date),
             'sitewide': sitewide
         }
     else:
@@ -53,6 +53,9 @@ def postList(request):
 
 def singlePost(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
+
+    hit_count = HitCount.objects.get_for_object(post)
+    hit_count_response = HitCountMixin.hit_count(request, hit_count)
     content = str(post.content)
     context = {
         'post': post,
@@ -67,7 +70,7 @@ def search(request):
         search_filter = request.GET.get("search_text")
         if search_filter == 'login':
             return HttpResponseRedirect("/accounts/login/")
-        search_posts_list = Post.objects.filter(Q(title__contains=search_filter) | Q(tags__slug=search_filter))
+        search_posts_list = Post.objects.filter(Q(title__contains=search_filter) | Q(tags__slug=search_filter)).distinct()
         if search_posts_list.count() > 0:
             context = {
                 'search_results': search_posts_list, 
