@@ -56,7 +56,7 @@ def singlePost(request, post_id):
 
     # hit_count = HitCount.objects.get_for_object(post)
     # hit_count_response = HitCountMixin.hit_count(request, hit_count)
-    content = sitewide['media_url']+str(post.content)
+    content = str(post.content)
     print(content)
     context = {
         'post': post,
