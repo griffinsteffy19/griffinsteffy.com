@@ -63,7 +63,7 @@ def singlePost(request, post_id):
         'sitewide': sitewide
     }
 
-    return render(request, sitewide.media_url+'/'+content, context)
+    return render(request, sitewide['media_url']+'/'+content, context)
 
 def search(request):
     # if this is a POST request we need to process the form data
