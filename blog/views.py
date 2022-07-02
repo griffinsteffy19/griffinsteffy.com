@@ -54,9 +54,10 @@ def postList(request):
 def singlePost(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
 
-    hit_count = HitCount.objects.get_for_object(post)
-    hit_count_response = HitCountMixin.hit_count(request, hit_count)
+    # hit_count = HitCount.objects.get_for_object(post)
+    # hit_count_response = HitCountMixin.hit_count(request, hit_count)
     content = str(post.content)
+    print(content)
     context = {
         'post': post,
         'sitewide': sitewide
