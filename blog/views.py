@@ -56,14 +56,14 @@ def singlePost(request, post_id):
 
     # hit_count = HitCount.objects.get_for_object(post)
     # hit_count_response = HitCountMixin.hit_count(request, hit_count)
-    content = str(post.content)
+    content = sitewide['media_url']+str(post.content)
     print(content)
     context = {
         'post': post,
         'sitewide': sitewide
     }
 
-    return render(request, sitewide['media_url']+'/'+content, context)
+    return render(request, content, context)
 
 def search(request):
     # if this is a POST request we need to process the form data
