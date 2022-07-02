@@ -76,6 +76,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #799496;
 }
 
+.book-class {
+  color: #f29559;
+}
+
+.recap-class {
+  color: #49475b;
+}
+
 .post-bar {
   background-color: #202c39;
 }
