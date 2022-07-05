@@ -9,8 +9,16 @@
             {% block post %}
             {% endblock %}
             <nav class="blog-pagination" aria-label="Pagination">
+                {% if prev_pk == "-1" %}
                 <a class="btn btn-outline-secondary rounded-pill disabled">Older</a>
+                {% else %}
+                <a class="btn btn-outline-secondary rounded-pill" href="/blog/{{prev_pk}}">Older</a>
+                {% endif %}
+                {% if next_pk == "-1" %}
                 <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+                {% else %}
+                <a class="btn btn-outline-secondary rounded-pill" href="/blog/{{next_pk}}">Newer</a>
+                {% endif %}
             </nav>
         </div>
         <div class="col-md-4">
