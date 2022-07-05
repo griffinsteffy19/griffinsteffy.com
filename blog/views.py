@@ -33,7 +33,6 @@ def postList(request):
     if(latest_post_list.count() > 0):
         featured_post = latest_post_list[0]
         feature_post_id = -1
-        found_featured = False
         for p in latest_post_list:
             if p.is_featured:
                 featured_post = p

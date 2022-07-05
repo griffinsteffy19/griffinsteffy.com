@@ -1,4 +1,3 @@
-import datetime
 from email.policy import default
 from django.db import models
 from django.utils import timezone
