@@ -46,7 +46,7 @@ def postList(request):
             'latest_post_list': latest_post_list,
             'featured_post': featured_post,
             'featured_post_id': feature_post_id,
-            'weeks_past': weeks_past(latest_post_list[0].pub_date),
+            'weeks_past': weeks_past(aboutme.about['start_date']),
             'sitewide': sitewide
         }
     else:
