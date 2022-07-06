@@ -40,7 +40,6 @@ def savePage(url, pagepath='page'):
     session = requests.Session()
     #... whatever other requests config you need here
     response = session.get(url)
-    print(response.encoding)
     soup = BeautifulSoup(response.text.encode(response.encoding), "html.parser")
     path, _ = os.path.splitext(pagepath)
     tags_inner = {'img': 'src', 'link': 'href', 'script': 'src'} # tag&inner tags to grab

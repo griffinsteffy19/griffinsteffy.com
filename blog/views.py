@@ -86,7 +86,6 @@ def singlePost(request, post_id):
     file_exists = exists('media/'+str(post.content))
     if(not(file_exists)):
         url = 'https://' + os.getenv("AWS_S3_CUSTOM_DOMAIN", settings.devAWS_S3_CUSTOM_DOMAIN) + '/media/' + content
-        print("savePage")
         savePage(url, 'media/'+str(post.content))
 
     context = {
