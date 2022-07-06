@@ -1,9 +1,12 @@
+
 from email.policy import default
 import encodings
 from encodings.utf_8 import encode
 from django.db import models
 from django.utils import timezone
 from taggit.managers import TaggableManager
+from django.core.files.storage import FileSystemStorage
+from django.conf import settings
 
 LORUM_IPSUM_LONG = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tempor nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices dolor."
 LORUM_IPSUM_SHORT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tempor nisl."
