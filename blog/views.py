@@ -4,11 +4,12 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from django.db.models import Q
 from .forms import NewPostForm
-
+import os
+from os.path import exists
 from griffinsteffy import settings
 from about import aboutme
 
-from .functions import getRandNum, weeks_past
+from .functions import getRandNum, weeks_past, savePage
 
 from hitcount.models import HitCount
 from hitcount.views import HitCountMixin
@@ -81,6 +82,13 @@ def singlePost(request, post_id):
     hit_count = HitCount.objects.get_for_object(post)
     hit_count_response = HitCountMixin.hit_count(request, hit_count)
     content = str(post.content)
+
+    file_exists = exists('media/'+str(post.content))
+    if(not(file_exists)):
+        url = 'https://' + os.getenv("AWS_S3_CUSTOM_DOMAIN", settings.devAWS_S3_CUSTOM_DOMAIN) + '/media/' + content
+        print("savePage")
+        savePage(url, 'media/'+str(post.content))
+
     context = {
         'post': post,
         'sitewide': sitewide,
