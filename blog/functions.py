@@ -40,10 +40,11 @@ def savePage(url, pagepath='page'):
     session = requests.Session()
     #... whatever other requests config you need here
     response = session.get(url)
-    soup = BeautifulSoup(response.text, "html.parser")
+    print(response.encoding)
+    soup = BeautifulSoup(response.text.encode(response.encoding), "html.parser")
     path, _ = os.path.splitext(pagepath)
     tags_inner = {'img': 'src', 'link': 'href', 'script': 'src'} # tag&inner tags to grab
     for tag, inner in tags_inner.items(): # saves resource files and rename refs
         savenRename(soup, session, url, tag, inner)
     with open(path+'.html', 'wb') as file: # saves modified html doc
-        file.write(soup.prettify('utf-8'))
+        file.write(soup.prettify(response.encoding))
