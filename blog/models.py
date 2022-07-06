@@ -1,5 +1,6 @@
-import datetime
 from email.policy import default
+import encodings
+from encodings.utf_8 import encode
 from django.db import models
 from django.utils import timezone
 from taggit.managers import TaggableManager

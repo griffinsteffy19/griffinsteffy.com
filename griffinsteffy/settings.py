@@ -28,7 +28,9 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") ==  "True"
 
-if DEBUG:
+DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
+
+if DEVELOPMENT_MODE:
     from . import dev
     devAWS_ACCESS_KEY_ID = dev.AWS_ACCESS_KEY_ID
     devAWS_SECRET_ACCESS_KEY = dev.AWS_SECRET_ACCESS_KEY
@@ -37,15 +39,11 @@ if DEBUG:
     devAWS_S3_CUSTOM_DOMAIN = dev.AWS_S3_CUSTOM_DOMAIN
     SECRET_KEY = dev.DJANGO_SECRET_KEY
 else:
-    devAWS_ACCESS_KEY_ID = "DEBUG NOT ENABLED"
-    devAWS_SECRET_ACCESS_KEY = "DEBUG NOT ENABLED"
-    devAWS_STORAGE_BUCKET_NAME = "DEBUG NOT ENABLED"
-    devAWS_S3_ENDPOINT_URL = "DEBUG NOT ENABLED"
-    devAWS_S3_CUSTOM_DOMAIN = "DEBUG NOT ENABLED"
-
-
-
-DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
+    devAWS_ACCESS_KEY_ID = "DEVELOPMENT_MODE NOT ENABLED"
+    devAWS_SECRET_ACCESS_KEY = "DEVELOPMENT_MODE NOT ENABLED"
+    devAWS_STORAGE_BUCKET_NAME = "DEVELOPMENT_MODE NOT ENABLED"
+    devAWS_S3_ENDPOINT_URL = "DEVELOPMENT_MODE NOT ENABLED"
+    devAWS_S3_CUSTOM_DOMAIN = "DEVELOPMENT_MODE NOT ENABLED"
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
@@ -86,7 +84,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'media')
+            os.path.join(BASE_DIR, 'media'),
+            # os.path.join(MEDIA_URL, '')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
