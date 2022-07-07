@@ -17,8 +17,11 @@ from hitcount.views import HitCountMixin
 sitewide = {
     'about': aboutme.about,
     'media_url': settings.MEDIA_URL,
+    'media_heading': 'https://',
 }
 
+if(settings.DEBUG):
+    sitewide['media_heading'] = ''
 
 def first(request):
     posts = Post.objects.all()
