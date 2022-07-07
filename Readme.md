@@ -1,4 +1,5 @@
-# griffinsteffy.com
+griffinsteffy.com
+===================
 
 ## Installation
     1. download as git repository
@@ -13,8 +14,11 @@
     DEVELOPMENT_MODE -> points to local or remote media/static server
 
 ### DEVELOPMENT_MODE
-    The site is setup to use digital ocean spaces to host media/static files
-    To do this locally, get neccessary environment variables and place them in dev.py located in the same folder as settings.py
+'''
+The site is setup to use digital ocean spaces to host media/static files
+To do this locally, get neccessary environment variables and place them
+in dev.py located in the same folder as settings.py
+'''
 ```
 griffinsteffy.com   
 │
@@ -38,5 +42,5 @@ griffinsteffy.com
 
 ## Future Features
     - Search Results accross post content, and aditional media on site
-        - [django haystack](https://django-haystack.readthedocs.io/en/master/)
+        - https://django-haystack.readthedocs.io/en/master/
     - Resume Page
