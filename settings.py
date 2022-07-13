@@ -24,23 +24,24 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# Debug Mode
 DEBUG = os.getenv("DEBUG", "False") ==  "True"
 
-DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
+#Access Remote Server
+REMOTE_SERVER = os.getenv("REMOTE_SERVER", "False") == "True"
 
+#Location
 LOCAL_DEVELOPMENT = os.getenv("LOCAL_DEVELOPMENT", "False") == "True"
 
 # SECURITY WARNING: keep the secret key used in production secret!
-if DEBUG:
-    if not(DEVELOPMENT_MODE):
-        from . import dev
-        SECRET_KEY = dev.DJANGO_SECRET_KEY
+if LOCAL_DEVELOPMENT:
+    from . import dev
+    SECRET_KEY = dev.DJANGO_SECRET_KEY
 else:
     SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
 
-if DEVELOPMENT_MODE:
-    from . import dev
+if LOCAL_DEVELOPMENT and REMOTE_SERVER:
     devAWS_ACCESS_KEY_ID = dev.AWS_ACCESS_KEY_ID
     devAWS_SECRET_ACCESS_KEY = dev.AWS_SECRET_ACCESS_KEY
     devAWS_STORAGE_BUCKET_NAME = dev.AWS_STORAGE_BUCKET_NAME
@@ -166,7 +167,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-if DEVELOPMENT_MODE:
+if REMOTE_SERVER:
     AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID", devAWS_ACCESS_KEY_ID)
     AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY", devAWS_SECRET_ACCESS_KEY)
 
