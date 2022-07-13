@@ -22,13 +22,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") ==  "True"
 
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
+
+LOCAL_DEVELOPMENT = os.getenv("LOCAL_DEVELOPMENT", "False") == "True"
+
+# SECURITY WARNING: keep the secret key used in production secret!
+if DEBUG:
+    if not(DEVELOPMENT_MODE):
+        from . import dev
+        SECRET_KEY = dev.DJANGO_SECRET_KEY
+else:
+    SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
+
 
 if DEVELOPMENT_MODE:
     from . import dev
@@ -44,10 +53,6 @@ else:
     devAWS_S3_ENDPOINT_URL = "DEVELOPMENT MODE NOT ENABLED"
     devAWS_S3_CUSTOM_DOMAIN = "DEVELOPMENT MODE NOT ENABLED"
 
-if DEBUG:
-    if not(DEVELOPMENT_MODE):
-        from . import dev
-    SECRET_KEY = dev.DJANGO_SECRET_KEY
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
@@ -110,7 +115,7 @@ WSGI_APPLICATION = 'griffinsteffy.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-if DEBUG is True:
+if LOCAL_DEVELOPMENT is True:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
