@@ -40,17 +40,16 @@ if LOCAL_DEVELOPMENT:
     LOCAL_AWS_STORAGE_BUCKET_NAME = local.AWS_STORAGE_BUCKET_NAME
     LOCAL_AWS_S3_ENDPOINT_URL = local.AWS_S3_ENDPOINT_URL
     LOCAL_AWS_S3_CUSTOM_DOMAIN = local.AWS_S3_CUSTOM_DOMAIN
-    LOCAL_DJANGO_SECRET_KEY = local.DJANGO_SECRET_KEY
+    SECRET_KEY = local.DJANGO_SECRET_KEY
 else:
     LOCAL_AWS_ACCESS_KEY_ID = ""
     LOCAL_AWS_SECRET_ACCESS_KEY = ""
     LOCAL_AWS_STORAGE_BUCKET_NAME = ""
     LOCAL_AWS_S3_ENDPOINT_URL = ""
     LOCAL_AWS_S3_CUSTOM_DOMAIN = ""
-    LOCAL_DJANGO_SECRET_KEY = get_random_secret_key()
+    # SECURITY WARNING: keep the secret key used in production secret!
+    SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", LOCAL_DJANGO_SECRET_KEY)
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
