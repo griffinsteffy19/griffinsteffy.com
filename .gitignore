@@ -137,4 +137,4 @@ media/thumbnails/*
 media/blog/templates/posts/*
 test/*
 
-griffinsteffy/dev.py
+griffinsteffy/local.py
