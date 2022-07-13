@@ -20,7 +20,7 @@ sitewide = {
     'media_heading': 'https://',
 }
 
-if(settings.DEBUG):
+if(settings.DEVELOPMENT_MODE) is False:
     sitewide['media_heading'] = ''
 
 def first(request):
