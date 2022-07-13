@@ -5,9 +5,10 @@ griffinsteffy.com
     1. download as git repository
     2. start virtual environment
     3. install requirements.txt via pip
-    4. 'export DEVELOPMENT_MODE=False'
+    4. 'export REMOTE_SERVER=False'
     5. 'export DEBUG=True'
-    6. 'python manage.py runserver'
+    6. 'export LOCAL_DEVELOPMENT=True'
+    7. 'python manage.py runserver'
 
 ## Environment Variables
     DEBUG -> enables debug mode on server (local or remote)

@@ -1,5 +1,5 @@
 from pkg_resources import DEVELOP_DIST
-from griffinsteffy.settings import DEVELOPMENT_MODE
+from griffinsteffy.settings import REMOTE_SERVER
 from storages.backends.s3boto3 import S3Boto3Storage
 import os
 class StaticStorage(S3Boto3Storage):
