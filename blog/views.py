@@ -17,8 +17,11 @@ from hitcount.views import HitCountMixin
 sitewide = {
     'about': aboutme.about,
     'media_url': settings.MEDIA_URL,
+    'media_heading': 'https://',
 }
 
+if(settings.DEBUG):
+    sitewide['media_heading'] = ''
 
 def first(request):
     posts = Post.objects.all()
@@ -72,10 +75,10 @@ def singlePost(request, post_id):
         for p in latest_post_list:
             if p.pk == post_id:
                 if index > 0:
-                    prev_pk = latest_post_list[index-1].pk
+                    next_pk = latest_post_list[index-1].pk
                 
                 if index < post_list_size - 1:
-                    next_pk = latest_post_list[index+1].pk
+                    prev_pk = latest_post_list[index+1].pk
                 break
             index+=1
 

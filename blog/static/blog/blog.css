@@ -69,11 +69,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .written-class {
-  color: #acc196;
+  color: #799496;
 }
 
 .thoughts-class {
-  color: #799496;
+  color: #f2d492;
 }
 
 .book-class {
@@ -81,9 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .recap-class {
-  color: #49475b;
+  color: #006ba6;
 }
 
+.finance-class {
+  color: #acc196;
+}
+.life-class {
+  color: #ad7a99;
+}
 .test-class {
   color: red;
 }

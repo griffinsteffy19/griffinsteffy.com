@@ -17,7 +17,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/blog/random/">Random</a>
                 </li>
-                {% if user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <li class="nav-item">
+                    <a class="nav-link" style="color:blue;" href="/about/resume/">Resume</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color:blue;" href="/admin/">admin</a>
                 </li>

@@ -37,13 +37,17 @@ if DEVELOPMENT_MODE:
     devAWS_STORAGE_BUCKET_NAME = dev.AWS_STORAGE_BUCKET_NAME
     devAWS_S3_ENDPOINT_URL = dev.AWS_S3_ENDPOINT_URL
     devAWS_S3_CUSTOM_DOMAIN = dev.AWS_S3_CUSTOM_DOMAIN
-    SECRET_KEY = dev.DJANGO_SECRET_KEY
 else:
-    devAWS_ACCESS_KEY_ID = "DEVELOPMENT_MODE NOT ENABLED"
-    devAWS_SECRET_ACCESS_KEY = "DEVELOPMENT_MODE NOT ENABLED"
-    devAWS_STORAGE_BUCKET_NAME = "DEVELOPMENT_MODE NOT ENABLED"
-    devAWS_S3_ENDPOINT_URL = "DEVELOPMENT_MODE NOT ENABLED"
-    devAWS_S3_CUSTOM_DOMAIN = "DEVELOPMENT_MODE NOT ENABLED"
+    devAWS_ACCESS_KEY_ID = "DEVELOPMENT MODE NOT ENABLED"
+    devAWS_SECRET_ACCESS_KEY = "DEVELOPMENT MODE NOT ENABLED"
+    devAWS_STORAGE_BUCKET_NAME = "DEVELOPMENT MODE NOT ENABLED"
+    devAWS_S3_ENDPOINT_URL = "DEVELOPMENT MODE NOT ENABLED"
+    devAWS_S3_CUSTOM_DOMAIN = "DEVELOPMENT MODE NOT ENABLED"
+
+if DEBUG:
+    if not(DEVELOPMENT_MODE):
+        from . import dev
+    SECRET_KEY = dev.DJANGO_SECRET_KEY
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
@@ -51,15 +55,16 @@ ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split("
 # Application definition
 
 INSTALLED_APPS = [
-    'blog',
-    'about',
-    'taggit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
+    'base',
+    'about',
+    'taggit',
     'crispy_forms',
     'storages',
     'mathfilters',
@@ -105,7 +110,7 @@ WSGI_APPLICATION = 'griffinsteffy.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-if DEVELOPMENT_MODE is True:
+if DEBUG is True:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
@@ -156,17 +161,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-
-if DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-    STATIC_URL = "/static/"
-    # STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"),)
-
-
-
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-else:
+if DEVELOPMENT_MODE:
     AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID", devAWS_ACCESS_KEY_ID)
     AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY", devAWS_SECRET_ACCESS_KEY)
 
@@ -190,6 +185,14 @@ else:
 
     MEDIA_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'media')
     MEDIA_ROOT = 'media/'
+else:
+
+    STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+    STATIC_URL = "/static/"
+    # STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"),)
+
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
