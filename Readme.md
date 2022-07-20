@@ -5,8 +5,8 @@ griffinsteffy.com
     1. download as git repository
     2. start virtual environment
     3. install requirements.txt via pip
-    4. 'export REMOTE_SERVER=False'
-    5. 'export DEBUG=True'
+    4. 'export DEBUG=True'
+    5. 'export REMOTE_SERVER=False'
     6. 'export LOCAL_DEVELOPMENT=True'
     7. 'python manage.py runserver'
 
