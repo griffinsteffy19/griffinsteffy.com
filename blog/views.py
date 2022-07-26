@@ -24,8 +24,8 @@ if(settings.REMOTE_SERVER) is False:
     sitewide['media_heading'] = ''
 
 def first(request):
-    posts = Post.objects.all()
-    return redirect('/blog/%s/' % posts[0].id)
+    oldest_posts = Post.objects.order_by('pub_date')
+    return redirect('/blog/%s/' % oldest_posts[0].id)
 
 
 def randomPost(request):
