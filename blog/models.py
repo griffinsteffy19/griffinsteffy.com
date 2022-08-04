@@ -15,7 +15,7 @@ LORUM_IPSUM_SHORT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Do
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
-    slug = models.SlugField(max_length = 250, null = True, blank = True)
+    # slug = models.SlugField(max_length = 250, null = True, blank = True)
     pub_date = models.DateTimeField('date published')
     content = models.FileField(upload_to='blog/templates/posts/')
     preview = models.CharField(max_length=85, default=LORUM_IPSUM_SHORT)
@@ -30,8 +30,8 @@ class Post(models.Model):
     def __str__(self):
         return self.title
     
-    def save(self, *args, **kwargs):
-        if not self.id:
-            # Newly created object, so set slug
-            self.slug = slugify(self.title)
-        super(Post, self).save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     if not self.id:
+    #         # Newly created object, so set slug
+    #         self.slug = slugify(self.title)
+    #     super(Post, self).save(*args, **kwargs)

@@ -76,50 +76,53 @@ def postList(request):
 
 def postId(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
-    print('/blog/'+post.slug)
-    return HttpResponseRedirect('/blog/'+post.slug)
+    # print('/blog/'+post.slug)
+    # return HttpResponseRedirect('/blog/'+post.slug)
+    return HttpResponseRedirect('/')
 
 def singlePost(request, slug):
-    post = get_object_or_404(Post, slug=slug)
-    post_id = post.pk
-    latest_post_list = Post.objects.order_by('-pub_date')
-    post_list_size = latest_post_list.count()
 
-    is_first = False
-    prev_pk = -1
-    next_pk = -1
-    if(post_list_size > 0):
-        if(latest_post_list[0].pk == post_id):
-            is_first = True
+    return HttpResponseRedirect('/')
+    # post = get_object_or_404(Post, slug=slug)
+    # post_id = post.pk
+    # latest_post_list = Post.objects.order_by('-pub_date')
+    # post_list_size = latest_post_list.count()
 
-        index = 0
-        for p in latest_post_list:
-            if p.pk == post_id:
-                if index > 0:
-                    next_pk = latest_post_list[index-1].pk
+    # is_first = False
+    # prev_pk = -1
+    # next_pk = -1
+    # if(post_list_size > 0):
+    #     if(latest_post_list[0].pk == post_id):
+    #         is_first = True
+
+    #     index = 0
+    #     for p in latest_post_list:
+    #         if p.pk == post_id:
+    #             if index > 0:
+    #                 next_pk = latest_post_list[index-1].pk
                 
-                if index < post_list_size - 1:
-                    prev_pk = latest_post_list[index+1].pk
-                break
-            index+=1
+    #             if index < post_list_size - 1:
+    #                 prev_pk = latest_post_list[index+1].pk
+    #             break
+    #         index+=1
 
-    hit_count = HitCount.objects.get_for_object(post)
-    hit_count_response = HitCountMixin.hit_count(request, hit_count)
-    content = str(post.content)
+    # hit_count = HitCount.objects.get_for_object(post)
+    # hit_count_response = HitCountMixin.hit_count(request, hit_count)
+    # content = str(post.content)
 
-    file_exists = exists('media/'+str(post.content))
-    if(not(file_exists)):
-        url = 'https://' + os.getenv("AWS_S3_CUSTOM_DOMAIN", settings.LOCAL_AWS_S3_CUSTOM_DOMAIN) + '/media/' + content
-        savePage(url, 'media/'+str(post.content))
+    # file_exists = exists('media/'+str(post.content))
+    # if(not(file_exists)):
+    #     url = 'https://' + os.getenv("AWS_S3_CUSTOM_DOMAIN", settings.LOCAL_AWS_S3_CUSTOM_DOMAIN) + '/media/' + content
+    #     savePage(url, 'media/'+str(post.content))
 
-    context = {
-        'post': post,
-        'sitewide': sitewide,
-        'next_pk': str(next_pk),
-        'prev_pk': str(prev_pk),
-    }
+    # context = {
+    #     'post': post,
+    #     'sitewide': sitewide,
+    #     'next_pk': str(next_pk),
+    #     'prev_pk': str(prev_pk),
+    # }
 
-    return render(request, content, context)
+    # return render(request, content, context)
 
 def archives(request, yyyy, mm):
         archive_posts_list = Post.objects.filter(
@@ -133,21 +136,22 @@ def archives(request, yyyy, mm):
         return postList(request)
 
 def search(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'GET':
-        search_filter = request.GET.get("search_text")
-        if search_filter == 'login':
-            return HttpResponseRedirect("/accounts/login/")
-        search_posts_list = Post.objects.filter(
-            Q(title__contains=search_filter) | Q(tags__slug=search_filter)).distinct()
-        if search_posts_list.count() > 0:
-            context = {
-                'search_results': search_posts_list,
-                'sitewide': sitewide
-            }
-            return render(request, 'blog/search_results.html', context)
+    return HttpResponseRedirect('/')
+    # # if this is a POST request we need to process the form data
+    # if request.method == 'GET':
+    #     search_filter = request.GET.get("search_text")
+    #     if search_filter == 'login':
+    #         return HttpResponseRedirect("/accounts/login/")
+    #     search_posts_list = Post.objects.filter(
+    #         Q(title__contains=search_filter) | Q(tags__slug=search_filter)).distinct()
+    #     if search_posts_list.count() > 0:
+    #         context = {
+    #             'search_results': search_posts_list,
+    #             'sitewide': sitewide
+    #         }
+    #         return render(request, 'blog/search_results.html', context)
 
-    return postList(request)
+    # return postList(request)
 
 
 def addpost(request):
