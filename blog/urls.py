@@ -6,7 +6,9 @@ urlpatterns = [
     # ex: /blog/
     path('', views.postList, name='list'),
     # ex: /blog/#/
-    path('<int:post_id>/', views.singlePost, name='single'),
+    path('<int:post_id>/', views.postId, name='postId'),
+    # ex: /blog/<slug>/
+    path("<slug:slug>",  views.singlePost, name='single'),
     # ex: /blog/first/
     path('first/', views.first, name='first'),
     # ex: /blog/random/
@@ -15,4 +17,6 @@ urlpatterns = [
     path('search/', views.search, name='search'),
     # ex: /blog/addpost/
     path('addpost/', views.addpost, name='addpost'),
+    # ex: /blog/<yyyy>/<mm>
+    path("<int:yyyy>/<int:mm>",  views.archives, name='archives'),
 ]

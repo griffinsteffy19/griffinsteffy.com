@@ -41,6 +41,8 @@ if LOCAL_DEVELOPMENT:
     LOCAL_AWS_S3_ENDPOINT_URL = local.AWS_S3_ENDPOINT_URL
     LOCAL_AWS_S3_CUSTOM_DOMAIN = local.AWS_S3_CUSTOM_DOMAIN
     LOCAL_SECRET_KEY = local.DJANGO_SECRET_KEY
+    LOCAL_PLAID_CLIENT_ID = local.PLAID_CLIENT_ID
+    LOCAL_PLAID_SECRET = local.PLAID_SANDBOX_KEY
 else:
     LOCAL_AWS_ACCESS_KEY_ID = ""
     LOCAL_AWS_SECRET_ACCESS_KEY = ""
@@ -66,6 +68,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'base',
+    # 'category',
     'about',
     'taggit',
     'crispy_forms',

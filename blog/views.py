@@ -13,11 +13,28 @@ from .functions import getRandNum, weeks_past, savePage
 
 from hitcount.models import HitCount
 from hitcount.views import HitCountMixin
+import calendar
+
+def getArchivesList():
+    latest_post_list = Post.objects.order_by('pub_date')
+    archivesList = []
+
+    month_yyyy = {}
+    last_label = "XXX"
+    for p in latest_post_list:
+        month_yyyy['label'] = calendar.month_name[p.pub_date.month] + " " + str(p.pub_date.year)
+        month_yyyy['href'] = str(p.pub_date.year) + "/" + str(p.pub_date.month)
+        if last_label != month_yyyy['label']:
+            archivesList.append(month_yyyy)
+            last_label = month_yyyy['label']
+        month_yyyy = {}
+    return archivesList
 
 sitewide = {
     'about': aboutme.about,
     'media_url': settings.MEDIA_URL,
     'media_heading': 'https://',
+    'archivesList': getArchivesList()
 }
 
 if(settings.REMOTE_SERVER) is False:
@@ -57,10 +74,14 @@ def postList(request):
         context = sitewide
     return render(request, 'blog/list.html', context)
 
-
-def singlePost(request, post_id):
+def postId(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
+    print('/blog/'+post.slug)
+    return HttpResponseRedirect('/blog/'+post.slug)
 
+def singlePost(request, slug):
+    post = get_object_or_404(Post, slug=slug)
+    post_id = post.pk
     latest_post_list = Post.objects.order_by('-pub_date')
     post_list_size = latest_post_list.count()
 
@@ -100,6 +121,16 @@ def singlePost(request, post_id):
 
     return render(request, content, context)
 
+def archives(request, yyyy, mm):
+        archive_posts_list = Post.objects.filter(
+            Q(pub_date__year=yyyy) & Q(pub_date__month=mm)).distinct()
+        if archive_posts_list.count() > 0:
+            context = {
+                'search_results': archive_posts_list,
+                'sitewide': sitewide
+            }
+            return render(request, 'blog/search_results.html', context)
+        return postList(request)
 
 def search(request):
     # if this is a POST request we need to process the form data
@@ -131,6 +162,7 @@ def addpost(request):
         form = NewPostForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            sitewide['archivesList']=getArchivesList()
         else:
             print("form not valid")
     return HttpResponseRedirect("/")
