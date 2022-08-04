@@ -93,13 +93,44 @@ h1, h2, h3, h4, h5, h6 {
 .home-class {
   color: #5a716a;
 }
+.photo-class {
+  color: #f1dac4;
+}
+.technology-class {
+  color: #6dc0d5;
+}
 .test-class {
   color: red;
+}
+
+.inline-href:link, .tag-href:visited {
+  color: #5a716a;
+}
+
+.tag-href:link, .tag-href:visited {
+  color: inherit;
+  font: inherit;
 }
 
 .utube-embed {
   width: 100%;
   aspect-ratio: 16/9;
+}
+
+.vertical-image {
+  width: 75%;
+  display:block;
+  margin:auto;
+}
+
+.subtitle {
+  width: 75%;
+  display:block;
+  margin:auto;
+  text-align: center;
+  font-style: italic;
+  line-height: 1em;
+  
 }
 
 .post-bar {
