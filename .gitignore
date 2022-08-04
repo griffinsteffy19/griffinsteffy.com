@@ -136,5 +136,4 @@ staticfiles/*
 media/thumbnails/*
 media/blog/templates/posts/*
 test/*
-category/*
 griffinsteffy/local.py
