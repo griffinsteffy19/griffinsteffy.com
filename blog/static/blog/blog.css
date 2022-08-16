@@ -99,6 +99,9 @@ h1, h2, h3, h4, h5, h6 {
 .technology-class {
   color: #6dc0d5;
 }
+.consumption-class {
+  color: #a69cac;
+}
 .test-class {
   color: red;
 }
