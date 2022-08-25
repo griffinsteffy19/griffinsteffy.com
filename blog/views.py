@@ -44,7 +44,6 @@ def first(request):
     oldest_posts = Post.objects.order_by('pub_date')
     return redirect('/blog/%s/' % oldest_posts[0].id)
 
-
 def randomPost(request):
     posts = Post.objects.all()
     rndm = getRandNum(len(posts))

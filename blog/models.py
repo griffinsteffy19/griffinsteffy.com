@@ -12,7 +12,6 @@ from django.template.defaultfilters import slugify
 LORUM_IPSUM_LONG = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tempor nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices dolor."
 LORUM_IPSUM_SHORT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tempor nisl."
 
-
 class Post(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(max_length = 250, null = True, blank = True)
