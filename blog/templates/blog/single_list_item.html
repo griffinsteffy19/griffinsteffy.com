@@ -1,7 +1,7 @@
 <!doctype html>
 
 {% load static %}
-<div class="col-md-6">
+{% comment %} <div class="col-md-6">
     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 mx-0 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
             {% include 'blog/tags.html' %}
@@ -15,4 +15,19 @@
 
         </div>
     </div>
+</div> {% endcomment %}
+<!-- Post preview-->
+<div class="post-preview">
+    <a href="/blog/{{post.slug}}">
+        <h2 class="post-title">{{post.title}}</h2>
+        <h3 class="post-subtitle">{{post.preview}}</h3>
+    </a>
+    <p class="post-meta">
+        Posted by
+        <a href="#!">Start Bootstrap</a>
+        on {{post.pub_date|date:"MM d, Y"}}
+    </p>
+    {% include 'blog/tags.html' %}
 </div>
+<!-- Divider-->
+<hr class="my-4" />

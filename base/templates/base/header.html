@@ -1,4 +1,4 @@
-<header class="mb-3 border-bottom">
+{% comment %} <header class="mb-3 border-bottom">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #acc196;">
         <a class="navbar-brand" href="/blog/">griffinsteffy.com</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -32,6 +32,9 @@
                     <a class="nav-link" style="color:red;" href="/category/">category</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" style="color:red;" href="/newbase/">New Base</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" style="color:blue;" href="{% url 'logout' %}">logout</a>
                 </li>
                 {% endif %}
@@ -43,4 +46,40 @@
             </form>
         </div>
     </nav>
-</header>
+</header> {% endcomment %}
+{% load static %}
+<header class="masthead" style="background-image: url({%static 'base/assets/img/home-bg.jpg'%})">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="/">griffinsteffy.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/">Home</a></li>
+            {% comment %} <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+            {% endcomment %}
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/first/">First</a></li>
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/random/">Random</a>
+            </li>
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="site-heading">
+            <h1>griffinsteffy.com</h1>
+            <span class="subheading">A website for my thoughts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
