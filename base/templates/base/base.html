@@ -54,7 +54,11 @@
   </svg> {% endcomment %}
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
+  {% if meta_description %}
+  <meta name="description" content="{{meta_description}}" />
+  {% else %}
+  <meta name="description" content="A place to store thoughts and ideas of Griffin Steffy" />
+  {% endif %}
   <meta name="author" content="Griffin Steffy">
   <meta name="generator" content="">
   <title>griffinsteffy.com</title>

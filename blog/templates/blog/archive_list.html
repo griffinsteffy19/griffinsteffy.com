@@ -21,13 +21,13 @@
                 {% endif %}
             </div>
         </div>
+        {% if archive_selection %}
+        <!-- Pager-->
+        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="/blog/all/">All
+                Posts →</a>
+        </div>
+        {% endif %}
     </div>
-    {% if archive_selection %}
-    <!-- Pager-->
-    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="/blog/all/">All
-            Posts →</a>
-    </div>
-    {% endif %}
     <div class="col-md-4">
         <div class="position-sticky" style="top: 2rem;">
             {% include "blog/archive_dir.html" %}
