@@ -4,7 +4,9 @@ from . import views
 
 urlpatterns = [
     # ex: /blog/
-    path('', views.postList, name='list'),
+    path('', views.recentPostList, name='recentPostList'),
+    # ex: /blog/all.
+    path('all/', views.allPostsList, name='allPostsList'),
     # ex: /blog/#/
     path('<int:post_id>/', views.postId, name='postId'),
     # ex: /blog/<slug>/

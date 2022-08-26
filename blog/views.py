@@ -1,3 +1,4 @@
+from datetime import date, datetime
 from email.policy import HTTP
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect
@@ -23,7 +24,7 @@ def getArchivesList():
     last_label = "XXX"
     for p in latest_post_list:
         month_yyyy['label'] = calendar.month_name[p.pub_date.month] + " " + str(p.pub_date.year)
-        month_yyyy['href'] = str(p.pub_date.year) + "/" + str(p.pub_date.month)
+        month_yyyy['href'] =  "/" + str(p.pub_date.year) + "/" + str(p.pub_date.month)
         if last_label != month_yyyy['label']:
             archivesList.append(month_yyyy)
             last_label = month_yyyy['label']
@@ -51,7 +52,7 @@ def randomPost(request):
     return redirect(redirect_str)
 
 
-def postList(request):
+def recentPostList(request):
     latest_post_list = Post.objects.order_by('-pub_date')
     if(latest_post_list.count() > 0):
         featured_post = latest_post_list[0]
@@ -63,7 +64,8 @@ def postList(request):
                 break
         latest_post_list.exclude(id=featured_post.id)
         context = {
-            'latest_post_list': latest_post_list,
+            'total_posts': len(latest_post_list),
+            'latest_post_list': latest_post_list[:5],
             'featured_post': featured_post,
             'featured_post_id': feature_post_id,
             'weeks_past': weeks_past(aboutme.about['start_date']),
@@ -71,7 +73,30 @@ def postList(request):
         }
     else:
         context = sitewide
-    return render(request, 'blog/list.html', context)
+    return render(request, 'blog/recent_list.html', context)
+
+def allPostsList(request):
+    post_list = Post.objects.order_by('-pub_date')
+    if(post_list.count() > 0):
+        featured_post = post_list[0]
+        feature_post_id = -1
+        for p in post_list:
+            if p.is_featured:
+                featured_post = p
+                feature_post_id = featured_post.id
+                break
+        # post_list.exclude(id=featured_post.id)
+        context = {
+            'post_list': post_list,
+            'featured_post': featured_post,
+            'featured_post_id': feature_post_id,
+            'weeks_past': weeks_past(aboutme.about['start_date']),
+            'sitewide': sitewide
+        }
+    else:
+        context = sitewide
+    return render(request, 'blog/archive_list.html', context)
+
 
 def postId(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
@@ -125,11 +150,12 @@ def archives(request, yyyy, mm):
             Q(pub_date__year=yyyy) & Q(pub_date__month=mm)).distinct()
         if archive_posts_list.count() > 0:
             context = {
-                'search_results': archive_posts_list,
+                'archive_selection': datetime(yyyy, mm, 1),
+                'post_list': archive_posts_list,
                 'sitewide': sitewide
             }
-            return render(request, 'blog/search_results.html', context)
-        return postList(request)
+            return render(request, 'blog/archive_list.html', context)
+        return allPostsList(request)
 
 def search(request):
     # if this is a POST request we need to process the form data

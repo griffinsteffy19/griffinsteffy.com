@@ -68,13 +68,19 @@
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:blue;"
                             href="{% url 'logout' %}">logout</a></li>
                     {% endif %}
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/">About</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/first/">First</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/random/">Random</a>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/">Home</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/contact/">Contact</a>
+                    {% comment %} <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/">About</a></li> {% endcomment %}
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/first/">First</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/random/">Random</a>
+                    </li>
+                    {% comment %} <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/contact/">Contact</a>
+                    </li> {% endcomment %}
                 </ul>
             </div>
         </div>
@@ -84,15 +90,16 @@
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
                     <h1>griffinsteffy.com</h1>
-                    {% comment %} <span class="subheading">A website for my thoughts</span> {% endcomment %}
                     <span>
                         <form action="{% url 'search' %}" method="get">
                             <div class="input-group rounded">
                                 <input type="search" name="search_text" class="form-control rounded"
                                     placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                                <span class="input-group-text border-0" id="search-addon">
-                                    <i class="fas fa-search"></i>
-                                </span>
+                                <button type="submit">
+                                    <span class="input-group-text border-0" id="search-addon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </button>
                             </div>
                         </form>
                     </span>
