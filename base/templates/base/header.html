@@ -1,6 +1,10 @@
 {% load static %}
 <link href="{% static 'blog/blog.css' %}" rel="stylesheet">
-<header class="masthead" style="background-image: url({%static 'base/assets/img/home-bg.jpg'%})">
+{% if header_image %}
+<header class="masthead" style="background-image: url({{sitewide.media_heading}}{{sitewide.media_url}}{{header_image}})">
+{% else %}
+<header class="masthead" style="background-image: url({%static 'base/img/home-bg.jpg'%})">
+    {% endif %}
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
         <div class="container px-4 px-lg-5">

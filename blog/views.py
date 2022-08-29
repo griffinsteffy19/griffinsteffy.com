@@ -41,7 +41,8 @@ sitewide = {
     'media_url': settings.MEDIA_URL,
     'media_heading': 'https://',
     'archivesList': getArchivesList(),
-    'header_title': 'griffinsteffy.com'
+    'header_title': 'griffinsteffy.com',
+    'header_image': 'static/base/img/home-bg.jpg'
 }
 
 if(settings.REMOTE_SERVER) is False:
@@ -154,6 +155,7 @@ def singlePost(request, slug):
         'prev_pk': str(prev_pk),
         'header_title': post.title,
         'header_subtitle': post.preview,
+        'header_image': post.thumbnail,
         'meta_description': post.featured_preview
     }
 
