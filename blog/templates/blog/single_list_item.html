@@ -1,21 +1,6 @@
 <!doctype html>
 
 {% load static %}
-{% comment %} <div class="col-md-6">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 mx-0 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-            {% include 'blog/tags.html' %}
-            <h3 class="mb-0">{{post.title}}</h3>
-            <div class="mb-1 text-muted">{{post.pub_date|date:"M d, Y"}}</div>
-            <p class="card-text mb-auto">{{post.preview}}</p>
-            <a href="/blog/{{post.slug}}" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="d-none d-lg-block">
-            <img width="200" height="250" src="{{sitewide.media_heading}}{{sitewide.media_url}}{{post.thumbnail}}" />
-
-        </div>
-    </div>
-</div> {% endcomment %}
 <!-- Post preview-->
 <div class="post-preview">
     <a href="/blog/{{post.slug}}">
