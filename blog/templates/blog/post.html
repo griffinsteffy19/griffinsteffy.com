@@ -3,8 +3,7 @@
 {% block content %}
 {% load static %}
 <link href="{% static 'blog/blog.css' %}" rel="stylesheet">
-<main class="container px-3 mb-auto">
-    <div class="container row g-5">
+    <div class="container row g-2">
         <div class="col-md-8">
             {% block post %}
             {% endblock %}
@@ -42,5 +41,4 @@
             </div>
         </div>
     </div>
-</main>
 {%endblock%}
