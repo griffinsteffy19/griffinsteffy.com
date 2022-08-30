@@ -1,18 +1,24 @@
 <!doctype html>
 
-{% extends 'base/base.html' %}
+{% extends 'base/main.html' %}
 {% load static %}
 {% block content %}
 <!-- Custom styles for this template -->
 <link href="{% static 'blog/blog.css' %}" rel="stylesheet">
 
 <main class="container mb-auto">
-    <div class="row mb-2">
-        {% if search_results %}
-        {% for post in search_results %}
-        {% include "blog/single_list_item.html" %}
-        {% endfor %}
-        {% endif %}
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <h1>Search Results...</h1>
+            {% if search_results %}
+            {% for post in search_results %}
+            {% include "blog/single_list_item.html" %}
+            {% endfor %}
+            {% endif %}
+            <!-- Pager-->
+            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="/blog/all/">All
+                    Posts →</a></div>
+        </div>
     </div>
-</main>
+    </main>
 {% endblock %}

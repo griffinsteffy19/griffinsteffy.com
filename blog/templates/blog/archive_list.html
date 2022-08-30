@@ -1,0 +1,36 @@
+<!doctype html>
+
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+<!-- Custom styles for this template -->
+<link href="{% static 'blog/blog.css' %}" rel="stylesheet">
+<div class="container row g-0">
+    <div class="col-md-8">
+        <div class="row gx-2 gx-lg-2 justify-content-center">
+            <div class="col-md-10 col-lg-10">
+                {% if archive_selection %}
+                <h1>{{archive_selection|date:"F Y"}}</h1>
+                <hr class="my-4" />
+                {% endif %}
+                {% if post_list %}
+                {% for post in post_list %}
+                {% include "blog/single_list_item.html" %}
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        {% if archive_selection %}
+        <!-- Pager-->
+        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="/blog/all/">All
+                Posts →</a>
+        </div>
+        {% endif %}
+    </div>
+    <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+            {% include "blog/archive_dir.html" %}
+        </div>
+    </div>
+</div>
+{% endblock %}

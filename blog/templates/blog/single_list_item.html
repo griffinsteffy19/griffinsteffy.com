@@ -1,18 +1,18 @@
 <!doctype html>
 
 {% load static %}
-<div class="col-md-6">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 mx-0 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-            {% include 'blog/tags.html' %}
-            <h3 class="mb-0">{{post.title}}</h3>
-            <div class="mb-1 text-muted">{{post.pub_date|date:"M d, Y"}}</div>
-            <p class="card-text mb-auto">{{post.preview}}</p>
-            <a href="/blog/{{post.slug}}" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="d-none d-lg-block">
-            <img width="200" height="250" src="{{sitewide.media_heading}}{{sitewide.media_url}}{{post.thumbnail}}" />
-
-        </div>
-    </div>
+<!-- Post preview-->
+<div class="post-preview">
+    <a href="/blog/{{post.slug}}">
+        <h2 class="post-title">{{post.title}}</h2>
+        <h3 class="post-subtitle">{{post.preview}}</h3>
+    </a>
+    {% include 'blog/tags.html' %}
+    <p class="post-meta">
+        Posted by
+        <a href="/about/">{{sitewide.about.name}}</a>
+        on {{post.pub_date|date:"F d, Y"}}
+    </p>
 </div>
+<!-- Divider-->
+<hr class="my-4" />

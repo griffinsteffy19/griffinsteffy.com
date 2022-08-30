@@ -1,46 +1,71 @@
-<header class="mb-3 border-bottom">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #acc196;">
-        <a class="navbar-brand" href="/blog/">griffinsteffy.com</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/blog/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog/first/">First</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog/random/">Random</a>
-                </li>
-                {% if request.user.is_superuser %}
-                <li class="nav-item">
-                    <a class="nav-link" style="color:blue;" href="/about/resume/">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:blue;" href="/admin/">admin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:blue;" href="/blog/addpost/">addpost</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="/category/">category</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:blue;" href="{% url 'logout' %}">logout</a>
-                </li>
-                {% endif %}
-            </ul>
-            <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="get">
-                <input name="search_text" class="form-control mr-sm-2" type="text" placeholder="Search" maxlength="100"
-                    aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+{% load static %}
+<link href="{% static 'blog/blog.css' %}" rel="stylesheet">
+{% if header_image %}
+<header class="masthead" style="background-image: url({{sitewide.media_heading}}{{sitewide.media_url}}{{header_image}})">
+{% else %}
+<header class="masthead" style="background-image: url({%static 'base/img/home-bg.jpg'%})">
+    {% endif %}
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="/">griffinsteffy.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    {% if request.user.is_superuser %}
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:red;"
+                            href="/admin/">admin</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:red;"
+                            href="/blog/addpost/">addpost</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:blue;"
+                            href="{% url 'logout' %}">logout</a></li>
+                    {% endif %}
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/">Home</a>
+                    </li>
+                    {% comment %} <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/">About</a></li> {% endcomment %}
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/first/">First</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/random/">Random</a>
+                    </li>
+                    {% comment %} <li class="nav-item">
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/contact/">Contact</a>
+                    </li> {% endcomment %}
+                </ul>
+            </div>
         </div>
     </nav>
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    {% if header_title %}
+                    <h1>{{header_title}}</h1>
+                    <span class="subheading">{{header_subtitle}}</span>
+                    {% else %}
+                    <h1>griffinsteffy.com</h1>
+                    <span>
+                        <form action="{% url 'search' %}" method="get">
+                            <div class="input-group rounded">
+                                <input type="search" name="search_text" class="form-control rounded"
+                                    placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                                <button type="submit">
+                                    <span class="input-group-text border-0" id="search-addon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
