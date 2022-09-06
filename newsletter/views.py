@@ -4,8 +4,8 @@ from newsletter import validation_utility
 from newsletter.models import Subscriber
 
 import utility
-import email_utility
-from assets import constants
+from newsletter import email_utility
+from newsletter.assets import constants
 # Create your views here.
 
 def subscribeForm(request):
@@ -28,7 +28,7 @@ def subscribe(request):
         subscription_confirmation_url = request.build_absolute_uri(reverse('newsletter:subscription_confirmation')) + "?token=" + token
         status = email_utility.send_subscription_email(email, subscription_confirmation_url)
     else:
-
+        print("TODO")
 
 def save_email(email):
     try:

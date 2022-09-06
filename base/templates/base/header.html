@@ -8,7 +8,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="/">griffinsteffy.com</a>
+            <a class="navbar-brand" href="{% url 'base:home' %}">griffinsteffy.com</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -18,26 +18,26 @@
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     {% if request.user.is_superuser %}
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:red;"
-                            href="/admin/">admin</a></li>
+                            href="{% url 'admin:index' %}">admin</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:red;"
-                            href="/blog/addpost/">addpost</a></li>
+                            href="{% url 'blog:addpost' %}">addpost</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:blue;"
                             href="{% url 'logout' %}">logout</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:blue;"
-                            href="/newsletter/">subscribe</a></li>
+                            href="{% url 'newsletter:subscribeForm' %}">subscribe</a></li>
                     {% endif %}
                     <li class="nav-item">
-                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/">Home</a>
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'blog:recentPostList' %}">Home</a>
                     </li>
-                    {% comment %} <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/">About</a></li> {% endcomment %}
+                    {% comment %} <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'about:about' %}">About</a></li> {% endcomment %}
                     <li class="nav-item">
-                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/first/">First</a>
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'blog:first' %}">First</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/random/">Random</a>
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'blog:random' %}">Random</a>
                     </li>
                     {% comment %} <li class="nav-item">
-                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/contact/">Contact</a>
+                        <a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'about:contact' %}">Contact</a>
                     </li> {% endcomment %}
                 </ul>
             </div>
