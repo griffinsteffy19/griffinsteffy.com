@@ -149,11 +149,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Django Hitcount
-
-HITCOUNT_HITS_PER_IP_LIMIT = 1
-HITCOUNT_KEEP_HIT_IN_DATABASE = { 'days': 30 }
-
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 # Internationalization
