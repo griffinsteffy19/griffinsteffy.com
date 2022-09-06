@@ -149,6 +149,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Django Hitcount
+
+HITCOUNT_KEEP_HIT_IN_DATABASE = { 'days': 30 }
+
+# Redirect URLs
+
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 # Internationalization
