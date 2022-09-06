@@ -23,6 +23,8 @@
                             href="/blog/addpost/">addpost</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:blue;"
                             href="{% url 'logout' %}">logout</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" style="color:blue;"
+                            href="/newsletter/">subscribe</a></li>
                     {% endif %}
                     <li class="nav-item">
                         <a class="nav-link px-lg-3 py-3 py-lg-4" href="/blog/">Home</a>
@@ -51,7 +53,7 @@
                     {% else %}
                     <h1>griffinsteffy.com</h1>
                     <span>
-                        <form action="{% url 'search' %}" method="get">
+                        <form action="{% url 'blog:search' %}" method="get">
                             <div class="input-group rounded">
                                 <input type="search" name="search_text" class="form-control rounded"
                                     placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
