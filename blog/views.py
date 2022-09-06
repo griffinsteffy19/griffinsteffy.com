@@ -10,7 +10,7 @@ import os
 from os.path import exists
 from griffinsteffy import settings
 from about import aboutme
-
+from blog import blocked_user_agents as bua
 from .functions import getRandNum, weeks_past, savePage
 
 from hitcount.models import HitCount
@@ -138,8 +138,18 @@ def singlePost(request, slug):
                 break
             index += 1
 
-    hit_count = HitCount.objects.get_for_object(post)
-    hit_count_response = HitCountMixin.hit_count(request, hit_count)
+
+    print("User Agent: " + str(request.META['HTTP_USER_AGENT']))
+
+    allow_hit = True
+    for ua in bua.blocked_user_agents:
+        if(ua in request.META['HTTP_USER_AGENT']):
+            allow_hit = False
+            break
+
+    if(allow_hit):
+        hit_count = HitCount.objects.get_for_object(post)
+        hit_count_response = HitCountMixin.hit_count(request, hit_count)
     content = str(post.content)
 
     file_exists = exists('media/'+str(post.content))
