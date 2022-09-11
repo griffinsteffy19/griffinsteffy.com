@@ -21,7 +21,7 @@ def subscribe(request):
     error_msg = validation_utility.validate_email(email)
     if error_msg:
         print(error_msg)
-        return HttpResponseRedirect(reverse('blog:recentPostList'))
+        return HttpResponseRedirect(reverse('blog:home'))
 
     if save_email(email):
         token = encrypt(email + constants.SEPARATOR + str(time.time()))

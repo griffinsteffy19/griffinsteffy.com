@@ -3,7 +3,7 @@
 {% load static %}
 <!-- Post preview-->
 <div class="post-preview">
-    <a href="{% url 'blog:recentPostList' %}{{post.slug}}">
+    <a href="{% url 'blog:home' %}{{post.slug}}">
         <h2 class="post-title">{{post.title}}</h2>
         <h3 class="post-subtitle">{{post.preview}}</h3>
     </a>

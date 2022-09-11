@@ -2,7 +2,7 @@
     <h4 class="fst-italic">Archives</h4>
     <ol class="list-unstyled mb-0">
         {% for month_yyyy in sitewide.archivesList %}
-        <li><a href="{{month_yyyy.href}}">{{month_yyyy.label}}</a></li>
+        <li><a href="{% url 'blog:home' %}{{month_yyyy.href}}">{{month_yyyy.label}}</a></li>
         {% endfor %}
     </ol>
 </div>
