@@ -102,6 +102,9 @@ h1, h2, h3, h4, h5, h6 {
 .consumption-class {
   color: #a69cac;
 }
+.review-class {
+  color: #700548;
+}
 .video-class {
   color: #247ba0;
 }
@@ -138,6 +141,39 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1em;
   
 }
+
+.context-image {
+  width: 95%;
+  display:block;
+  margin:auto;
+}
+
+.context-subtitle {
+  width: 95%;
+  display:block;
+  margin:auto;
+  text-align: center;
+  font-style: italic;
+  line-height: 1em;
+  
+}
+
+.column {
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center-box {
+  margin: auto;
+}
+
 
 .post-bar {
   background-color: #202c39;
