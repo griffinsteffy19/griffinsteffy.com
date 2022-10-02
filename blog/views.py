@@ -200,7 +200,7 @@ def search(request):
             }
             return render(request, 'blog/search_results.html', context)
 
-    return postList(request)
+    return search_posts_list(request)
 
 
 def addpost(request):
