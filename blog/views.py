@@ -27,8 +27,7 @@ def getArchivesList():
     for p in latest_post_list:
         month_yyyy['label'] = calendar.month_name[p.pub_date.month] + \
             " " + str(p.pub_date.year)
-        month_yyyy['href'] = "/" + \
-            str(p.pub_date.year) + "/" + str(p.pub_date.month)
+        month_yyyy['href'] = str(p.pub_date.year) + "/" + str(p.pub_date.month)
         if last_label != month_yyyy['label']:
             archivesList.append(month_yyyy)
             last_label = month_yyyy['label']
@@ -61,7 +60,7 @@ def randomPost(request):
     return redirect(redirect_str)
 
 
-def recentPostList(request):
+def home(request):
     latest_post_list = Post.objects.order_by('-pub_date')
     if(latest_post_list.count() > 0):
         featured_post = latest_post_list[0]
@@ -138,7 +137,6 @@ def singlePost(request, slug):
                 break
             index += 1
 
-
     print("User Agent: " + str(request.META['HTTP_USER_AGENT']))
 
     allow_hit = True
@@ -200,7 +198,7 @@ def search(request):
             }
             return render(request, 'blog/search_results.html', context)
 
-    return search_posts_list(request)
+    return home(request)
 
 
 def addpost(request):

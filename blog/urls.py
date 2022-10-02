@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     # ex: /blog/
-    path('', views.recentPostList, name='recentPostList'),
+    path('', views.home, name='home'),
     # ex: /blog/all.
     path('all/', views.allPostsList, name='allPostsList'),
     # ex: /blog/#/
