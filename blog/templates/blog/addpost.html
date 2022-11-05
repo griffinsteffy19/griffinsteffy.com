@@ -6,7 +6,7 @@
 
 {% if user.is_authenticated %}
 {% load crispy_forms_tags %} 
-<form action="/blog/addpost/" method="post" enctype="multipart/form-data">
+<form action="{% url 'blog:addpost' %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form|crispy }}
     <input type="submit" value="Submit">

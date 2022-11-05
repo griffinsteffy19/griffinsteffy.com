@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect, reverse
 
 # Create your views here.
+def home(request):
+    return HttpResponseRedirect(reverse('blog:home'))

@@ -20,7 +20,7 @@
         </div>
         {%if featured_post_id > 0 %}
         <div class="post-preview p-2 mb-1 mt-4 rounded bg-light">
-            <a href="/blog/{{featured_post.slug}}">
+            <a href="{% url 'blog:home' %}{{featured_post.slug}}">
                 <h2 class="post-title my-3">{{featured_post.title}}</h2>
                 <h3 class="post-subtitle mb-0">{{featured_post.preview}}</h3>
             </a>
@@ -29,7 +29,7 @@
             {% endwith %}
             <p class="post-meta">
                 Posted by
-                <a href="/about/">{{sitewide.about.name}}</a>
+                <a href="{% url 'about:about' %}">{{sitewide.about.name}}</a>
                 on {{featured_post.pub_date|date:"F d, Y"}}
             </p>
         </div>
@@ -42,7 +42,7 @@
         {% endfor %}
         {% endif %}
         <!-- Pager-->
-        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="/blog/all/">All
+        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="{% url 'blog:allPostsList' %}">All
                 Posts →</a>
         </div>
     </div>

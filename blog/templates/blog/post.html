@@ -11,12 +11,12 @@
                 {% if prev_pk == "-1" %}
                 <a class="btn btn-outline-secondary rounded-pill disabled">Older</a>
                 {% else %}
-                <a class="btn btn-outline-secondary rounded-pill" href="/blog/{{prev_pk}}/">Older</a>
+                <a class="btn btn-outline-secondary rounded-pill" href="{% url 'blog:home' %}{{prev_pk}}/">Older</a>
                 {% endif %}
                 {% if next_pk == "-1" %}
                 <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
                 {% else %}
-                <a class="btn btn-outline-secondary rounded-pill" href="/blog/{{next_pk}}/">Newer</a>
+                <a class="btn btn-outline-secondary rounded-pill" href="{% url 'blog:home' %}{{next_pk}}/">Newer</a>
                 {% endif %}
             </nav>
         </div>
