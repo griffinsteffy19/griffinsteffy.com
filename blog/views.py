@@ -12,7 +12,7 @@ from griffinsteffy import settings
 from about import aboutme
 from blog import blocked_user_agents as bua
 from .functions import getRandNum, weeks_past, savePage
-
+from taggit.models import Tag
 from hitcount.models import HitCount
 from hitcount.views import HitCountMixin
 import calendar
@@ -76,6 +76,7 @@ def home(request):
             'latest_post_list': latest_post_list[:5],
             'featured_post': featured_post,
             'featured_post_id': feature_post_id,
+            'all_tags': Tag.objects.all(),
             'weeks_past': weeks_past(aboutme.about['start_date']),
             'sitewide': sitewide
         }

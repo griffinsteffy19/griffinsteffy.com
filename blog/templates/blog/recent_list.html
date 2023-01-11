@@ -18,6 +18,13 @@
             <a>{{total_posts}}/52 Posts</a>
             <a>{{weeks_past}}/52 Weeks</a>
         </div>
+        <div class="d-inline-block">
+            {% for tag in all_tags.all %}
+            <strong class="{{tag}}-class">
+                <a class="tag-href" href="{% url 'blog:search' %}?search_text={{tag}}">{{tag}}</a>
+            </strong>
+            {% endfor %}
+        </div>
         {%if featured_post_id > 0 %}
         <div class="post-preview p-2 mb-1 mt-4 rounded bg-light">
             <a href="{% url 'blog:home' %}{{featured_post.slug}}">
@@ -42,7 +49,8 @@
         {% endfor %}
         {% endif %}
         <!-- Pager-->
-        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="{% url 'blog:allPostsList' %}">All
+        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"
+                href="{% url 'blog:allPostsList' %}">All
                 Posts →</a>
         </div>
     </div>
