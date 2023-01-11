@@ -129,6 +129,10 @@ h1, h2, h3, h4, h5, h6 {
   aspect-ratio: 16/9;
 }
 
+.utube-embed-vertical {
+  width: 100%;
+  aspect-ratio: 9/16;
+}
 .vertical-image {
   width: 75%;
   display:block;
