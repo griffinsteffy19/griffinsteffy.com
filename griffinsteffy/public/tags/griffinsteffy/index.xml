@@ -2,27 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GriffinSteffy on Terminal</title>
-    <link>//localhost:1313/tags/griffinsteffy/</link>
+    <link>/tags/griffinsteffy/</link>
     <description>Recent content in GriffinSteffy on Terminal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/griffinsteffy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/griffinsteffy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome Post</title>
-      <link>//localhost:1313/posts/welcome/</link>
+      <link>/posts/5-publish/welcome/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/posts/welcome/</guid>
-      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;
-&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;
-&lt;p&gt;This is my favorite Harry Potter House
-!&lt;img src=&#34;//localhost:1313/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;
-&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;
-&lt;p&gt;This is my favorite Harry Potter House
-!&lt;img src=&#34;//localhost:1313/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-</content>
+      <guid>/posts/5-publish/welcome/</guid>
+      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;&#xA;&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;&#xA;&lt;p&gt;This is my favorite Harry Potter House&#xA;![[gryffindor.jpg]]&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Welcome Post</title>
+      <link>/posts/welcome/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/welcome/</guid>
+      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;&#xA;&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;&#xA;&lt;p&gt;This is my favorite Harry Potter House&#xA;!&lt;img src=&#34;/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
