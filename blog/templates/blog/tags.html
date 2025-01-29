@@ -1,8 +1,0 @@
-<!doctype html>
-<div class="d-inline-block">
-    {% for tag in post.tags.all %}
-    <strong class="{{tag}}-class">
-        <a class="tag-href" href="{% url 'blog:search' %}?search_text={{tag}}">{{tag}}</a>
-    </strong>
-    {% endfor %}
-</div>
