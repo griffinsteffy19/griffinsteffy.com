@@ -5,10 +5,10 @@ draft:
 tags:
   - GriffinSteffy
 type: post
-description: 
-Weight: 
-showTableOfContents: 
-draft:
+description: Welcome to the blog
+Weight:
+  - "1"
+showTableOfContents:
 ---
 # Welcome
 Hello and welcome to griffinsteffy.com
