@@ -1,6 +1,6 @@
 ---
 type: post
-title: 
+title: Purpose
 date: 2022-07-07T17:00:00
 description: Writing is not in my core competency, but here I am starting a blog.
 tags:
