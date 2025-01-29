@@ -1,43 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Griffin Steffy</title>
-    <link>/</link>
-    <description>Recent content on Griffin Steffy</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test Full Pipeline Post</title>
-      <link>/posts/testing-again/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/testing-again/</guid>
-      <description>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;
-&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&lt;/p&gt;
-&lt;p&gt;!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;
-&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&lt;/p&gt;
-&lt;p&gt;!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Welcome Post</title>
-      <link>/posts/welcome/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/welcome/</guid>
-      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;
-&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;
-&lt;p&gt;This is my favorite Harry Potter House
-!&lt;img src=&#34;/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;
-&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;
-&lt;p&gt;This is my favorite Harry Potter House
-!&lt;img src=&#34;/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Griffin Steffy</title><link>https://gokarna-hugo.netlify.app/</link><description>Recent content on Griffin Steffy</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokarna-hugo.netlify.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Test Full Pipeline Post</title><link>https://gokarna-hugo.netlify.app/posts/testing-again/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://gokarna-hugo.netlify.app/posts/testing-again/</guid><description>&lt;h1 id="test-header">Test Header&lt;/h1>
+&lt;p>Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&lt;/p>
+&lt;p>!&lt;img src="https://gokarna-hugo.netlify.app/images/new%20hampshire%20red.png" alt="Image Description">&lt;/p></description></item><item><title>Welcome Post</title><link>https://gokarna-hugo.netlify.app/posts/welcome/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://gokarna-hugo.netlify.app/posts/welcome/</guid><description>&lt;h1 id="welcome">Welcome&lt;/h1>
+&lt;p>Hello and welcome to griffinsteffy.com&lt;/p>
+&lt;p>This is my favorite Harry Potter House
+!&lt;img src="https://gokarna-hugo.netlify.app/images/gryffindor.jpg" alt="Image Description">&lt;/p></description></item><item><title/><link>https://gokarna-hugo.netlify.app/posts/purpose/</link><pubDate>Thu, 07 Jul 2022 17:00:00 +0000</pubDate><guid>https://gokarna-hugo.netlify.app/posts/purpose/</guid><description>&lt;h1 id="the-idea-behind-it">The Idea Behind It&lt;/h1>
+&lt;p>If there is one thing you should know about me is that I am not a confident writer. As I wrote papers during school, I tended to procrastinate (maybe like yourself). However, I’m not sure I always waited till the last minute due to a lack of an idea. Sometimes it was no motivation to write, but looking back I do not think that was always the case.&lt;/p></description></item><item><title/><link>https://gokarna-hugo.netlify.app/index-about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gokarna-hugo.netlify.app/index-about/</guid><description>&lt;h1 id="welcome-to-the-blog">Welcome to the Blog&lt;/h1>
+&lt;p>Awhile back I started a blog, but the path I chose caused a lot of friction from the idea creating to the publishing. Hopefully this one is setup better where I can update things here with minimal effort in the publishing phase.&lt;/p>
+&lt;p>Hopefully over the next couple of weeks I can work on converting my older posts to this version so I can create a nice backlog.&lt;/p></description></item></channel></rss>
