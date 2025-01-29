@@ -2,22 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/auto-blog-pipeline-2/</loc>
-    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
+    <loc>/posts/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/auto-publish-2/</loc>
-    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/griffinsteffy/</loc>
     <lastmod>2025-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/</loc>
-    <lastmod>2025-01-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2025-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/testing-again/</loc>
@@ -25,9 +19,6 @@
   </url><url>
     <loc>/posts/welcome/</loc>
     <lastmod>2025-01-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/pipeline/</loc>
-    <lastmod>0005-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
   </url>
