@@ -41,5 +41,18 @@ obsidian://open?
 </content>
     </item>
     
+    <item>
+      <title>Test 2</title>
+      <link>/posts/pipeline/</link>
+      <pubDate>Sat, 29 Jan 0005 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pipeline/</guid>
+      <description>&lt;h1 id=&#34;pipeline-test&#34;&gt;pipeline test&lt;/h1&gt;
+&lt;p&gt;testing the pipeline&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;pipeline-test&#34;&gt;pipeline test&lt;/h1&gt;
+&lt;p&gt;testing the pipeline&lt;/p&gt;
+</content>
+    </item>
+    
   </channel>
 </rss>
