@@ -1,6 +1,6 @@
 ---
 title: Test Full Pipeline Post
-date: 2025-01-29
+date: 2025-01-29T12:00:00
 tags:
   - GriffinSteffy
 type: post
