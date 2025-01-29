@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Terminal</title>
+    <title>Posts on Griffin Steffy</title>
     <link>/posts/</link>
-    <description>Recent content in Posts on Terminal</description>
+    <description>Recent content in Posts on Griffin Steffy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -14,13 +14,11 @@
       
       <guid>/posts/testing-again/</guid>
       <description>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;
-&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;
-obsidian://open?
-!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&lt;/p&gt;
+&lt;p&gt;!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
       <content>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;
-&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;
-obsidian://open?
-!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&lt;/p&gt;
+&lt;p&gt;!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
 </content>
     </item>
     

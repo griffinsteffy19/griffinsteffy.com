@@ -6,5 +6,5 @@ tags:
 ---
 # Test Header
 Hi There, I'm just testing some things, but here is a picture to do that with...
-obsidian://open?
+
 !![Image Description](/images/new%20hampshire%20red.png)
