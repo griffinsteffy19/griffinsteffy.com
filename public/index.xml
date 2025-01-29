@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Griffin Steffy</title><link>https://gokarna-hugo.netlify.app/</link><description>Recent content on Griffin Steffy</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokarna-hugo.netlify.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Test Full Pipeline Post</title><link>https://gokarna-hugo.netlify.app/posts/testing-again/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://gokarna-hugo.netlify.app/posts/testing-again/</guid><description>&lt;h1 id="test-header">Test Header&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Griffin Steffy</title><link>https://gokarna-hugo.netlify.app/</link><description>Recent content on Griffin Steffy</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokarna-hugo.netlify.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Test Full Pipeline Post</title><link>https://gokarna-hugo.netlify.app/posts/testing-again/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://gokarna-hugo.netlify.app/posts/testing-again/</guid><description>&lt;hr>
+&lt;h2 id="draft">type: post
+title:
+date:
+description:
+tags:
+Weight:
+showTableOfContents:
+draft:&lt;/h2>
+&lt;h1 id="test-header">Test Header&lt;/h1>
 &lt;p>Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&lt;/p>
 &lt;p>!&lt;img src="https://gokarna-hugo.netlify.app/images/new%20hampshire%20red.png" alt="Image Description">&lt;/p></description></item><item><title>Welcome Post</title><link>https://gokarna-hugo.netlify.app/posts/welcome/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://gokarna-hugo.netlify.app/posts/welcome/</guid><description>&lt;h1 id="welcome">Welcome&lt;/h1>
 &lt;p>Hello and welcome to griffinsteffy.com&lt;/p>
