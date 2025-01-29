@@ -6,33 +6,7 @@
     <description>Recent content in Posts on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>auto publish</title>
-      <link>/posts/auto-blog-pipeline-2/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/auto-blog-pipeline-2/</guid>
-      <description>&lt;h1 id=&#34;automation&#34;&gt;Automation&lt;/h1&gt;
-&lt;p&gt;Hopefully after typing this something gets auto published to my website&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;automation&#34;&gt;Automation&lt;/h1&gt;
-&lt;p&gt;Hopefully after typing this something gets auto published to my website&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>auto publish 2</title>
-      <link>/posts/auto-publish-2/</link>
-      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/auto-publish-2/</guid>
-      <description>&lt;h1 id=&#34;auto-title&#34;&gt;Auto Title&lt;/h1&gt;
-&lt;p&gt;Auto Content&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;auto-title&#34;&gt;Auto Title&lt;/h1&gt;
-&lt;p&gt;Auto Content&lt;/p&gt;
-</content>
-    </item>
-    
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Full Pipeline Post</title>
       <link>/posts/testing-again/</link>
@@ -64,19 +38,6 @@ obsidian://open?
 &lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;
 &lt;p&gt;This is my favorite Harry Potter House
 !&lt;img src=&#34;/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Test 2</title>
-      <link>/posts/pipeline/</link>
-      <pubDate>Sat, 29 Jan 0005 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/pipeline/</guid>
-      <description>&lt;h1 id=&#34;pipeline-test&#34;&gt;pipeline test&lt;/h1&gt;
-&lt;p&gt;testing the pipeline&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;pipeline-test&#34;&gt;pipeline test&lt;/h1&gt;
-&lt;p&gt;testing the pipeline&lt;/p&gt;
 </content>
     </item>
     
