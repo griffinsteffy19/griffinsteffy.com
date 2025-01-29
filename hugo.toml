@@ -70,7 +70,7 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Griffin Steffy"
 
     [languages.en.params]
       subtitle = "A simple, retro theme for Hugo"
@@ -88,7 +88,7 @@ paginate = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "Griffin Steffy"
         logoHomeLink = "/"
 
       [languages.en.menu]
