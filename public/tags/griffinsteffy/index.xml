@@ -4,23 +4,42 @@
     <title>GriffinSteffy on Terminal</title>
     <link>/tags/griffinsteffy/</link>
     <description>Recent content in GriffinSteffy on Terminal</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/griffinsteffy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/griffinsteffy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Full Pipeline Post</title>
       <link>/posts/testing-again/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      
       <guid>/posts/testing-again/</guid>
-      <description>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;&#xA;&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&#xA;obsidian://open?&#xA;!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;
+&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;
+obsidian://open?
+!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;
+&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;
+obsidian://open?
+!&lt;img src=&#34;/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+</content>
     </item>
+    
     <item>
       <title>Welcome Post</title>
       <link>/posts/welcome/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      
       <guid>/posts/welcome/</guid>
-      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;&#xA;&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;&#xA;&lt;p&gt;This is my favorite Harry Potter House&#xA;!&lt;img src=&#34;/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;
+&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;
+&lt;p&gt;This is my favorite Harry Potter House
+!&lt;img src=&#34;/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;
+&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;
+&lt;p&gt;This is my favorite Harry Potter House
+!&lt;img src=&#34;/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+</content>
     </item>
+    
   </channel>
 </rss>
