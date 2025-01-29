@@ -21,6 +21,19 @@
     </item>
     
     <item>
+      <title>auto publish 2</title>
+      <link>/posts/auto-publish-2/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/auto-publish-2/</guid>
+      <description>&lt;h1 id=&#34;auto-title&#34;&gt;Auto Title&lt;/h1&gt;
+&lt;p&gt;Auto Content&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;auto-title&#34;&gt;Auto Title&lt;/h1&gt;
+&lt;p&gt;Auto Content&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>Test Full Pipeline Post</title>
       <link>/posts/testing-again/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
