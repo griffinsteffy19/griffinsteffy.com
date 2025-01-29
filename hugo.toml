@@ -1,7 +1,7 @@
 baseURL = 'https://www.griffinsteffy.com/'
 languageCode = 'en-us'
 title = 'griffinsteffy'
-theme="papermod"
+theme="congo"
 
 # Header settings
 [params.header]
