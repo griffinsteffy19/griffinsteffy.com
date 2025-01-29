@@ -1,7 +1,7 @@
 ---
 type: post
 title: Current Consumptions
-date: 2022-08-10T18:00:00
+date: 2022-08-15T17:00:00
 description: Consuming content drives creation. It gives inspiration, views other than your own, and a gauge as to what are your true interests.
 tags:
   - archive
