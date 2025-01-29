@@ -9,7 +9,6 @@ type: post
 title: 
 date: 
 description: 
-tags: 
 Weight: 
 showTableOfContents: 
 draft:
