@@ -1,3 +1,6 @@
 [submodule "griffinsteffy/themes/papermod"]
 	path = griffinsteffy/themes/papermod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "griffinsteffy/themes/congo"]
+	path = griffinsteffy/themes/congo
+	url = https://github.com/jpanther/congo.git
