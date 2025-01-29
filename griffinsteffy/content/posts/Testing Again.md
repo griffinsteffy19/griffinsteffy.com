@@ -5,9 +5,9 @@ tags:
   - GriffinSteffy
 ---
 ---
-type: post
 title: 
 date: 
+type: post
 description: 
 Weight: 
 showTableOfContents: 
