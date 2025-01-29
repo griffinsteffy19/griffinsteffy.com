@@ -1,14 +1,12 @@
-baseURL = 'https://griffinsteffy.com/'
+baseURL = 'https://www.griffinsteffy.com/'
 languageCode = 'en-us'
-title = 'Griffin Steffy'
+title = 'griffinsteffy'
+theme="papermod"
 
-theme = "gallery"
-
-# Author config
-[author]
-  name = "Griffin Steffy"
-  email = "contact@griffinsteffy.com"
-  link = "griffinsteffy.com"
+# Header settings
+[params.header]
+desktopMode = "fixed"
+mobileMode = "auto"
 
 # Menu config
 [menu]
@@ -39,10 +37,3 @@ theme = "gallery"
     name = "Categories"
     url = "/categories/"
     title = ""
-
-# Markup related configuration in Hugo
-[markup]
-  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-  [markup.highlight]
-    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
-    noClasses = false
