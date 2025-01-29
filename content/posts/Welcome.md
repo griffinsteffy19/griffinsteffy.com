@@ -1,6 +1,6 @@
 ---
 title: Welcome Post
-date: 2025-01-29
+date: 2025-01-29T10:00:00
 draft: 
 tags:
   - GriffinSteffy
