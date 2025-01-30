@@ -1,7 +1,7 @@
 ---
 type: post
 title: Watering Our Plant
-date: 2023-02-06T22:11:00
+date: 2023-03-06T22:11:00
 description: I didn't realize how much I would enjoy taking care of a plant or two until we got one last year. I'm sure giving it a name has made more attached to watching it grow!
 tags:
   - written
