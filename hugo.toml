@@ -1,4 +1,4 @@
-baseURL = "https://gokarna-hugo.netlify.app"
+baseURL = "https://blog.griffinsteffy.com"
 defaultContentLanguage = "en"
 enableEmoji = true
 enableRobotsTXT = true
@@ -39,7 +39,7 @@ title = "Griffin Steffy"
         });
       });
     </script>
-  """ 
+  """
 
   description = "Staying Curious, because a plate is never too full"
   footer = "Griffin Steffy"
@@ -90,11 +90,6 @@ title = "Griffin Steffy"
     pre = "<span data-feather='coffee'></span>"
     url = "https://buymeacoffee.com/griffin"
     weight = 6
-  [[menu.main]]
-    identifier = "rss"
-    pre = "<span data-feather='rss'></span>"
-    url = "/index.xml"
-    weight = 7
 
 [markup]
   [markup.tableOfContents]
