@@ -1,7 +1,7 @@
 ---
 type: post
 title: FFP (Fastest Feasible Product)
-date: 2020-08-22T17:00:00
+date: 2022-08-22T17:00:00
 description: Starting is always the hardest part. Often it is because what we are trying to start seems like it is too much to handle.
 tags:
   - written
