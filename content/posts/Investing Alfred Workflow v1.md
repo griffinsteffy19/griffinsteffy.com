@@ -26,4 +26,4 @@ I’ve noticed after using it a bit, that the exchange reported on Yahoo can som
 
 The final challenge I had was actually executing the script to process the ten thousand different tickers. At first I was running it on my local PC, but the downside was that I needed to have an internet connection, and be powered on until it finished. Since I was pulling Yahoo! Finance from a free package, it wasn’t the fastest API integration, so it took up to 10 seconds for some companies. After a few days of trying to keep it running on my local machine, I bit the bullet and bought a remote droplet on Digital Ocean to run the script. Turns out once I figured out how to run it in the background there it was a much easier process to generate the data I needed. I simply committed the final results to my repository, and walla! I was ready to go!
 
-If you are interested in using the workflow you can view the code on GitHub here.
+If you are interested in using the workflow you can view the code on GitHub here. 
