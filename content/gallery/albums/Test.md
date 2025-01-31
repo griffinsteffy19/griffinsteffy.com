@@ -7,6 +7,5 @@ images:
   - images/gallery/test/20250119_015.jpg
   - images/gallery/test/20250119_022.jpg
   - images/gallery/test/20250119_026.jpg
-image: images/gallery/test/20250119_015.jpg
 ---
 
