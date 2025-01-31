@@ -1,0 +1,18 @@
+<div class="list-posts">
+
+    {{ range where .Site.Pages "Params.featured" true }}
+    {{ if eq .Type "post" }}
+    {{ if .Params.image }}
+    <div class="post-thumbnail">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+    </div>
+    {{ end }}
+    <div class="post-title"><a href="{{ .RelPermalink }}" class="post-link">{{ .Title }}</a></a>
+        <div class="flex-break"></div><span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+    </div>
+    {{ if .Description }}
+    <p>{{ .Description }}</p>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</div>

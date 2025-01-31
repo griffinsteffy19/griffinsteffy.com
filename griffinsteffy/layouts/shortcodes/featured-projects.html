@@ -1,0 +1,21 @@
+<div class="featured-projects">
+    <div class="project-list">
+        {{ range where .Site.Pages "Params.featured" true }}
+        {{ if eq .Type "page" }}
+        <article class="project-item">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ if .Params.tech }}
+            <div class="project-tech">
+                {{ range .Params.tech }}
+                <span class="tech-tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ if .Description }}
+            <p>{{ .Description }}</p>
+            {{ end }}
+        </article>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
