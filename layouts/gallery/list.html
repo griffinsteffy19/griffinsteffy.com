@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="gallery-index">
+  <h1>{{ .Title }}</h1>
+  
+  <div class="album-grid">
+    {{ range .Pages }}
+      <div class="album-preview">
+        <a href="{{ .Permalink }}">
+          <img src="{{ (index .Params.images 0) }}" alt="{{ .Title }}">
+          <h3>{{ .Title }}</h3>
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
