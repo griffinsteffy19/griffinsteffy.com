@@ -1,0 +1,23 @@
+---
+type: post
+title: My Work Fit
+date: 2022-11-13T18:00:00
+description: I have the luxury of a job with a flexibly wardrobe, but that doesn't mean that I can look like a slob. I start with these three essentials every time I get dressed to head into the office.
+tags: 
+- written
+- life
+weight: 1
+showTableOfContents: false
+draft: false
+---
+Working as an embedded developer I do acknowledge that I have a lot of luxuries. I am blessed to have a great job, work for a great company who cares about its employees, and have the freedom to express myself through what I wear to work.
+I have not been in the working world as long as others, but in my short time, I have discovered a few things that I enjoy wearing to maintain productivity and comfortability throughout the work day. Here are the three things I wear to the office almost every day.
+1. The First essential I wear is a T-shirt. I tend to lean towards solid prints versus graphics or patterns, because they feel slightly more professional, and often have more versatility in terms of other things you are wearing. The struggle I had for a long time was finding good quality shirts that didn't cost a fortune. I bought some in the past form big box retailers, but after a few times wearing them they started to fade, or shrink. Then I discovered through a reddit deep dive [jiffyshirts.com](https://jiffyshirts.com). This is a whole sale website that typically sells their products to retailers who make these expensive high quality T-shirts! The advantage here is that you can buy their blanks for  less than I could find something similar at a big box store, while also maintaining quality. I'm sure there are better T-shirts out there, but for the price of less than $6 in most cases, I don't think Jiffy can be beat.
+	- Here is a direct link to the blanks that I buy: [here](https://www.jiffyshirts.com/nextlevel-N6210.html?ac=Cardinal#?back=/)
+2. After finding a shirt, the next thing I look for is pants. Unfortunately I hav not yet discovered the same deal on pants as I did for my T-shirts. The two things I tried to maximize in the pants category was comfortability, and versatility. When I am headed to the office I like to look nice, but with our casual dress code, wearing slacks everyday feels a little overdressed (not that it is a bad thing to do so every now and then). This directed me to jeans or a slacks hybrid that is more on the casual side. I have two choices for these that are both comfortable beyond belief
+	- [Mugsy Jeans](https://mugsyjeans.com)
+	- [Birddogs Khakis](https://www.birddogs.com/collections/khaki-pants)
+ Both of these will cost anywhere form $100 to $120, which is typical for mens pants, so at least they are not a premium price above that. What I do enjoy is how I would sleep in a a pair of either of these if It was acceptable to then continue wearing them to work the next day. I find with normal blue jeans, or khakis that the material is super stiff, and the first thing that happens once you get home is that the pants come off. I do not feel like that is a requirement when wearing these. They have all day comfortability, and have styles that look acceptable for a workplace.
+ I will note that the Birddogs offer pants with liners. I actually enjoy my pair without the liner more, because I feel like I don't need to wash them every single time because I chose to use the liner to its full potential. Eventually, I ended up wearing underwear underneath the liner to achieve the same effect as the ones without.
+3. Besides pants and a shirt, what I believe can change comfortability and confidence the most to a working individual is shoe choice. I have to admit, until a few months ago I had to be the most boring shoe person in the world. I opted for the all black pair of basically every shoe I owned for simplicity. I have since realize that wearing a stylish pair of shoes gives you this level of confidence that I would do a bad job trying to explain where it comes from, I just know it exists from experience. What I have been wearing to the office for the past year is a pair of [Allbirds](https://www.allbirds.com) high-tops, and I just recently added a pair of their wool runners to my collection. Shoe style tends to be person to person, but for my basic solid color style Allbirds struck a chord with me. They fit my style and are comfortable enough to wear for an entire day due to how much they weight (very very light).
+If you want to look just like me while working, you can start by ordering any variety of the above three items. As it seems to go, I'm sure my style will change overtime, but I stand by my suggestions as a comfortable base to build off of for any season.
