@@ -1,5 +1,5 @@
 ---
 title: Gallery
 type: page
-description:
+description: albums and stuff
 ---
