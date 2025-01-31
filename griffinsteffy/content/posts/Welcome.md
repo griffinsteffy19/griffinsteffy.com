@@ -8,7 +8,9 @@ type: post
 description: Welcome to the blog
 Weight:
   - "1"
-showTableOfContents:
+showTableOfContents: 
+featured: true
+image: /images/gryffindor.jpg
 ---
 # Welcome
 Hello and welcome to griffinsteffy.com
