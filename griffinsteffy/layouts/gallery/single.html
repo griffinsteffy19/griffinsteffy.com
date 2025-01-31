@@ -1,24 +1,20 @@
 {{ define "main" }}
 <div class="gallery-container">
-  <h1>{{ .Title }}</h1>
-  
-  {{ if .Params.description }}
+    <h1>{{ .Title }}</h1>
+
+    {{ if .Params.description }}
     <p class="gallery-description">{{ .Params.description }}</p>
-  {{ end }}
-  
-  <div class="gallery-grid">
-    {{ range .Params.images }}
-      <div class="gallery-item">
-        <a href="{{ . }}" data-lightbox="gallery" data-title="{{ $.Title }}">
-          <img 
-            src="{{ . }}" 
-            alt="{{ $.Title }} gallery image"
-            loading="lazy"
-          >
-        </a>
-      </div>
     {{ end }}
-  </div>
+
+    <div class="gallery-grid">
+        {{ range .Params.images }}
+        <div class="gallery-item">
+            <a href="{{ . }}" data-lightbox="gallery" data-title="{{ $.Title }}">
+                <img src="{{ . }}" alt="{{ $.Title }} gallery image" loading="lazy">
+            </a>
+        </div>
+        {{ end }}
+    </div>
 </div>
 {{ end }}
 
