@@ -1,6 +1,5 @@
 ---
 title: Gallery
 type: page
+description:
 ---
-# Gallery
-hopefully I get a gallery up of pictures I've taken up here eventually
