@@ -15,7 +15,7 @@ title = "Griffin Steffy"
   
   accentColor = "#FF4D4D"
   dateFormat = "2006-01-02"
-  showPostsOnHomePage = "recent"
+  showPostsOnHomePage = ""
   numberPostsOnHomePage = 4
   togglePreviousAndNextButtons = true
   displayReadingTime = true
