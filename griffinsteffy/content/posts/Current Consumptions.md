@@ -9,7 +9,9 @@ tags:
 Weight:
   - "1"
 showTableOfContents: 
-draft:
+draft: 
+image: /images/gryffindor.jpg
+featured: true
 ---
 # Youtube
 

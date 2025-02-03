@@ -1,18 +1,37 @@
-<div class="list-posts">
+<div class="featured-hero max-w-[1400px] mx-auto px-4 py-8">
+    <h2>Post</h2>
+    <div class="post-list">
+        {{ range first 1 (where (where .Site.Pages "Type" "post") "Params.featured" true) }}
+        <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+            <div class="featured-content space-y-6 p-8">
+                <div class="metadata text-sm">
+                    <div class="inline-flex items-center space-x-2 flex-wrap">
+                        <h4 class="text-4xl lg:text-5xl font-bold leading-tight">
+                            <a href="{{ .RelPermalink }}" class="hover:text-red-600 transition-colors">
+                                {{ .Title }}
+                            </a>
+                        </h4>
+                        <time class="text-gray-600 text-base not-italic ml-2">{{ .Date.Format "January 2, 2006"}}</time>
+                    </div>
+                </div>
 
-    {{ range where .Site.Pages "Params.featured" true }}
-    {{ if eq .Type "post" }}
-    {{ if .Params.image }}
-    <div class="post-thumbnail">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+                {{ if .Params.tags }}
+                <ul class="post-tags">
+                    {{ range .Params.tags }}
+                    <li class="post-tag">
+                        <a href="/tags/{{ . }}">
+                            <div class="tag-name">#{{ . }}</div>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+
+                {{ if .Description }}
+                <p class="text-lg text-gray-700 leading-relaxed">{{ .Description }}</p>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
     </div>
-    {{ end }}
-    <div class="post-title"><a href="{{ .RelPermalink }}" class="post-link">{{ .Title }}</a></a>
-        <div class="flex-break"></div><span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
-    </div>
-    {{ if .Description }}
-    <p>{{ .Description }}</p>
-    {{ end }}
-    {{ end }}
-    {{ end }}
 </div>

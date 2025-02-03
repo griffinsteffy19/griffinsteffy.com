@@ -14,9 +14,9 @@ The goal for this website is to share my thoughts, projects, and ideas. I have a
 
 Interested in collaboration or just want to say hello? [Drop me a suggestion](/suggestion-form)!
 
-# Features
+# Featured
 {{< featured-posts >}}
 {{< featured-projects >}}
 
-# Recent
+## Recent
 {{< recent-posts >}}

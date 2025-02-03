@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Consumption on Griffin Steffy</title><link>http://localhost:1313/tags/consumption/</link><description>Recent content in Consumption on Griffin Steffy</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Aug 2022 17:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/consumption/index.xml" rel="self" type="application/rss+xml"/><item><title>Current Consumptions</title><link>http://localhost:1313/posts/current-consumptions/</link><pubDate>Mon, 15 Aug 2022 17:00:00 +0000</pubDate><guid>http://localhost:1313/posts/current-consumptions/</guid><description>&lt;h1 id="youtube">Youtube&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=vwHUr2v2V-Y">E&amp;amp;K Streaming Room&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=mTezK6s3TMw&amp;amp;t=62s">Chris Hau Desk Setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=_WLI3veTBE0">Fast Paced Videos - Matti&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=CfasOfus0lA&amp;amp;t=95s">Mayhem Games Recap&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h1 id="podcasts">Podcasts&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="https://podcasts.apple.com/us/podcast/land-of-the-giants/id1465767420">Land of the Giants&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://podcasts.apple.com/us/podcast/decoder-with-nilay-patel/id1011668648">Decoder&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://podcasts.apple.com/us/podcast/invested-the-rule-1-investing-podcast/id1008452319">InvestEd&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h1 id="blogswritten">Blogs/Written&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="https://aliabdaal.com/articles/">Ali Abdaal&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://commoncog.com/caselib/">Common Cog Case Library&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fortelabs.co/blog/">Forte Labs&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consumption on </title>
+    <link>//localhost:1313/tags/consumption/</link>
+    <description>Recent content in Consumption on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Aug 2022 17:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/consumption/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current Consumptions</title>
+      <link>//localhost:1313/posts/current-consumptions/</link>
+      <pubDate>Mon, 15 Aug 2022 17:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/current-consumptions/</guid>
+      <description>&lt;h1 id=&#34;youtube&#34;&gt;Youtube&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=vwHUr2v2V-Y&#34;&gt;E&amp;amp;K Streaming Room&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=mTezK6s3TMw&amp;amp;t=62s&#34;&gt;Chris Hau Desk Setup&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_WLI3veTBE0&#34;&gt;Fast Paced Videos - Matti&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=CfasOfus0lA&amp;amp;t=95s&#34;&gt;Mayhem Games Recap&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/land-of-the-giants/id1465767420&#34;&gt;Land of the Giants&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/decoder-with-nilay-patel/id1011668648&#34;&gt;Decoder&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/invested-the-rule-1-investing-podcast/id1008452319&#34;&gt;InvestEd&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;blogswritten&#34;&gt;Blogs/Written&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://aliabdaal.com/articles/&#34;&gt;Ali Abdaal&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://commoncog.com/caselib/&#34;&gt;Common Cog Case Library&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://fortelabs.co/blog/&#34;&gt;Forte Labs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

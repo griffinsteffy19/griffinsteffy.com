@@ -1,8 +1,17 @@
-<div class="list-posts">
+<!-- <div class="list-posts">
 
     {{ range first 5 (where .Site.RegularPages "Type" "post") }}
     <div class="post-title"><a href="{{ .RelPermalink }}" class="post-link">{{ .Title }}</a></a>
         <div class="flex-break"></div><span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
     </div>
+    {{ end }}
+</div> -->
+<div class="recent-posts posts-list">
+    {{ range first 5 (where .Site.RegularPages "Type" "post") }}
+    <article class="post-title">
+        <a href="{{ .RelPermalink }}" class="post-link">{{ .Title }}</a>
+        <div class="flex-break"></div>
+        <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+    </article>
     {{ end }}
 </div>

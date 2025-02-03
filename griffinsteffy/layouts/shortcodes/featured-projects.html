@@ -1,4 +1,4 @@
-<div class="featured-projects">
+<!-- <div class="featured-projects">
     <div class="project-list">
         {{ range where .Site.Pages "Params.featured" true }}
         {{ if eq .Type "page" }}
@@ -14,6 +14,38 @@
             {{ if .Description }}
             <p>{{ .Description }}</p>
             {{ end }}
+        </article>
+        {{ end }}
+        {{ end }}
+    </div>
+</div> -->
+
+<div class="featured-projects">
+    <h2>Project</h2>
+    <div class="post-list">
+        {{ range where .Site.Pages "Params.featured" true }}
+        {{ if eq .Type "page" }}
+        <article class="post-item">
+            <div class="post-container">
+                {{ if .Params.image }}
+                <div class="post-thumbnail">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+                </div>
+                {{ end }}
+                <div class="post-content">
+                    <h4><a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+                    {{ if .Params.tech }}
+                    <div class="project-tech">
+                        {{ range .Params.tech }}
+                        <span class="tech-tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    {{ if .Description }}
+                    <p class="post-summary">{{ .Description }}</p>
+                    {{ end }}
+                </div>
+            </div>
         </article>
         {{ end }}
         {{ end }}
