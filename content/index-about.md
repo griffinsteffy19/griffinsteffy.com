@@ -8,15 +8,4 @@ The goal for this website is to share my thoughts, projects, and ideas. I have a
 
 - **[Blog](/posts)**: Exploring ideas, sharing insights, and documenting my journey
 - **[Projects](/projects)**: A showcase of my technical and creative work
-- **[Gallery](/gallery)**: Visual stories and moments captured through my lens
-
-## Get in Touch
-
-Interested in collaboration or just want to say hello? [Drop me a suggestion](/suggestion-form)!
-
-# Features
-{{< featured-posts >}}
-{{< featured-projects >}}
-
-# Recent
-{{< recent-posts >}}
+- **Gallery**: *coming soon*
