@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Griffin Steffy</title><link>http://localhost:1313/projects/</link><description>Recent content in Projects on Griffin Steffy</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Chicken Coop</title><link>http://localhost:1313/projects/chicken-coop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/projects/chicken-coop/</guid><description>&lt;p>They always said that chickens were the gateway animal into everything else. Where that might be true, it still sounded like a fun thing for our family to enjoy and learn from.&lt;/p></description></item><item><title>Homelab</title><link>http://localhost:1313/projects/homelab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/projects/homelab/</guid><description>&lt;p>Home of all things regarding my home lab setup&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Griffin Steffy</title><link>https://blog.griffinsteffy.com/projects/</link><description>Recent content in Projects on Griffin Steffy</description><generator>Hugo</generator><language>en</language><atom:link href="https://blog.griffinsteffy.com/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Chicken Coop</title><link>https://blog.griffinsteffy.com/projects/chicken-coop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.griffinsteffy.com/projects/chicken-coop/</guid><description>&lt;p>In 2024 our family took a mindset shift to self-sufficiency. I have always had a urge to be independent and not rely on others for the things I need. You&amp;rsquo;ll find this theme throughout many of the projects I pursue. Naturally, food was the primary first target, as it is a necessity to living. We actually began with some sourdough after a friend showed my wife how to make it, but in the back of our minds we always wanted chickens. This is where our Homesteading journey began.&lt;/p></description></item><item><title>Homelab</title><link>https://blog.griffinsteffy.com/projects/homelab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.griffinsteffy.com/projects/homelab/</guid><description>&lt;p>Home of all things regarding my home lab setup&lt;/p>
 &lt;h1 id="nodes">Nodes&lt;/h1>
 &lt;ul>
 &lt;li>GM&lt;/li>
@@ -21,9 +21,16 @@
 &lt;li>synology
 &lt;ul>
 &lt;li>photos&lt;/li>
+&lt;li>data backup
+&lt;ul>
+&lt;li>personal&lt;/li>
+&lt;li>business&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;li>file store&lt;/li>
 &lt;li>plex&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>cloudfare-ddns&lt;/li>
 &lt;li>pihole&lt;/li>
 &lt;li>actual-budget&lt;/li>

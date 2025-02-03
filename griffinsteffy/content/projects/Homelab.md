@@ -23,7 +23,11 @@ Home of all things regarding my home lab setup
 - immich
 - synology
 	- photos
-- plex
+	- data backup
+		- personal
+		- business
+	- file store
+	- plex
 - cloudfare-ddns
 - pihole
 - actual-budget
