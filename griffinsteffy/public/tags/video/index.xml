@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Video on </title>
-    <link>//localhost:1313/tags/video/</link>
-    <description>Recent content in Video on </description>
+    <title>Video on Hugo Bootstrap Theme</title>
+    <link>http://localhost:1313/tags/video/</link>
+    <description>Recent content in Video on Hugo Bootstrap Theme</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 11 Jan 2023 08:11:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <lastBuildDate>Mon, 03 Feb 2025 08:20:36 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/video/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2023 Video 1</title>
-      <link>//localhost:1313/posts/2023-video-1/</link>
+      <link>http://localhost:1313/posts/2023-video-1/</link>
       <pubDate>Wed, 11 Jan 2023 08:11:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023-video-1/</guid>
+      <guid>http://localhost:1313/posts/2023-video-1/</guid>
       <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/FRtO636xVAo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
     <item>
       <title>First YouTube Video</title>
-      <link>//localhost:1313/posts/first-youtube-video/</link>
-      <pubDate>Sun, 11 Sep 2022 19:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/first-youtube-video/</guid>
+      <link>http://localhost:1313/posts/first-youtube-video/</link>
+      <pubDate>Sun, 11 Sep 2022 19:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/first-youtube-video/</guid>
       <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/wIBf6rLDvek?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
   </channel>

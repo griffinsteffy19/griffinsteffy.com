@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hugo Bootstrap Theme</title>
+    <link>http://localhost:1313/pt/categories/</link>
+    <description>Recent content in Categories on Hugo Bootstrap Theme</description>
+    <generator>Hugo</generator>
+    <language>pt-PT</language>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <atom:link href="http://localhost:1313/pt/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

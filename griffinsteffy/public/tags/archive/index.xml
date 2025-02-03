@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Archive on </title>
-    <link>//localhost:1313/tags/archive/</link>
-    <description>Recent content in Archive on </description>
+    <title>Archive on Hugo Bootstrap Theme</title>
+    <link>http://localhost:1313/tags/archive/</link>
+    <description>Recent content in Archive on Hugo Bootstrap Theme</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 10 Oct 2022 13:24:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/archive/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <lastBuildDate>Mon, 03 Feb 2025 08:20:36 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/archive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Ton of Bricks</title>
-      <link>//localhost:1313/posts/a-ton-of-bricks-fp-pt-1/</link>
-      <pubDate>Mon, 10 Oct 2022 13:24:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/a-ton-of-bricks-fp-pt-1/</guid>
+      <link>http://localhost:1313/posts/a-ton-of-bricks-fp-pt-1/</link>
+      <pubDate>Mon, 10 Oct 2022 13:24:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/a-ton-of-bricks-fp-pt-1/</guid>
       <description>&lt;h1 id=&#34;a-ton-of-bricks&#34;&gt;A Ton of Bricks&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I was very naive as a college graduate when it came to my finances. I generally knew how to save money, be frugal with my spending, but my actual my applicable knowledge of finances was novice at best. Having just graduated from a prestigious engineer school, I had accepted my first real job, was moving to another state, and was prepping to get married that summer, life was great. It wasn’t that I didn’t know what was coming my way, I just did not understand the gap of knowledge that I had to make up. The good news was that I had time on my side to figure things out before they really became a problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>First YouTube Video</title>
-      <link>//localhost:1313/posts/first-youtube-video/</link>
-      <pubDate>Sun, 11 Sep 2022 19:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/first-youtube-video/</guid>
+      <link>http://localhost:1313/posts/first-youtube-video/</link>
+      <pubDate>Sun, 11 Sep 2022 19:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/first-youtube-video/</guid>
       <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/wIBf6rLDvek?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
     <item>
       <title>Current Consumptions</title>
-      <link>//localhost:1313/posts/current-consumptions/</link>
-      <pubDate>Mon, 15 Aug 2022 17:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/current-consumptions/</guid>
-      <description>&lt;h1 id=&#34;youtube&#34;&gt;Youtube&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=vwHUr2v2V-Y&#34;&gt;E&amp;amp;K Streaming Room&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=mTezK6s3TMw&amp;amp;t=62s&#34;&gt;Chris Hau Desk Setup&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_WLI3veTBE0&#34;&gt;Fast Paced Videos - Matti&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=CfasOfus0lA&amp;amp;t=95s&#34;&gt;Mayhem Games Recap&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/land-of-the-giants/id1465767420&#34;&gt;Land of the Giants&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/decoder-with-nilay-patel/id1011668648&#34;&gt;Decoder&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/invested-the-rule-1-investing-podcast/id1008452319&#34;&gt;InvestEd&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;blogswritten&#34;&gt;Blogs/Written&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://aliabdaal.com/articles/&#34;&gt;Ali Abdaal&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://commoncog.com/caselib/&#34;&gt;Common Cog Case Library&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://fortelabs.co/blog/&#34;&gt;Forte Labs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <link>http://localhost:1313/posts/current-consumptions/</link>
+      <pubDate>Mon, 15 Aug 2022 17:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/current-consumptions/</guid>
+      <description>&lt;h1 id=&#34;youtube&#34;&gt;Youtube&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=vwHUr2v2V-Y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;E&amp;amp;K Streaming Room&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=mTezK6s3TMw&amp;amp;t=62s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chris Hau Desk Setup&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_WLI3veTBE0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fast Paced Videos - Matti&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=CfasOfus0lA&amp;amp;t=95s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mayhem Games Recap&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/land-of-the-giants/id1465767420&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Land of the Giants&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/decoder-with-nilay-patel/id1011668648&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Decoder&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/invested-the-rule-1-investing-podcast/id1008452319&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;InvestEd&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;blogswritten&#34;&gt;Blogs/Written&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://aliabdaal.com/articles/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ali Abdaal&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://commoncog.com/caselib/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Common Cog Case Library&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://fortelabs.co/blog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Forte Labs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Purpose</title>
-      <link>//localhost:1313/posts/purpose/</link>
-      <pubDate>Thu, 07 Jul 2022 17:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/purpose/</guid>
+      <link>http://localhost:1313/posts/purpose/</link>
+      <pubDate>Thu, 07 Jul 2022 17:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/purpose/</guid>
       <description>&lt;h1 id=&#34;the-idea-behind-it&#34;&gt;The Idea Behind It&lt;/h1&gt;&#xA;&lt;p&gt;If there is one thing you should know about me is that I am not a confident writer. As I wrote papers during school, I tended to procrastinate (maybe like yourself). However, I’m not sure I always waited till the last minute due to a lack of an idea. Sometimes it was no motivation to write, but looking back I do not think that was always the case.&lt;/p&gt;</description>
     </item>
   </channel>

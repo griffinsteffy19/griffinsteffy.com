@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Productivity on </title>
-    <link>//localhost:1313/tags/productivity/</link>
-    <description>Recent content in Productivity on </description>
+    <title>Productivity on Hugo Bootstrap Theme</title>
+    <link>http://localhost:1313/tags/productivity/</link>
+    <description>Recent content in Productivity on Hugo Bootstrap Theme</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 25 Jan 2023 21:34:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <lastBuildDate>Mon, 03 Feb 2025 08:20:36 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Use Todoist</title>
-      <link>//localhost:1313/posts/how-i-use-todoist/</link>
+      <link>http://localhost:1313/posts/how-i-use-todoist/</link>
       <pubDate>Wed, 25 Jan 2023 21:34:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/how-i-use-todoist/</guid>
-      <description>&lt;p&gt;In my original outline of my Second Brain I briefly described how I store my tasks. Since then, I have had time to get through a few iterations of my workflow using this specific application.&lt;/p&gt;&#xA;&lt;p&gt;Luckily my favorite things that drew me to the app initially are all still true, and most likely even more reinforced. It is quick to add task, organize them, and complete them as they come up. The cross-platform availability is what really gets me excited about talking about &lt;a href=&#34;https://todoist.com/&#34;&gt;Todoist&lt;/a&gt;. I have mentioned that my work computer is a Windows machine, and I would like to use arguably the most crucial part of my second brain the 40+ hours a week I am using my work computer.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/how-i-use-todoist/</guid>
+      <description>&lt;p&gt;In my original outline of my Second Brain I briefly described how I store my tasks. Since then, I have had time to get through a few iterations of my workflow using this specific application.&lt;/p&gt;&#xA;&lt;p&gt;Luckily my favorite things that drew me to the app initially are all still true, and most likely even more reinforced. It is quick to add task, organize them, and complete them as they come up. The cross-platform availability is what really gets me excited about talking about &lt;a href=&#34;https://todoist.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Todoist&lt;/a&gt;. I have mentioned that my work computer is a Windows machine, and I would like to use arguably the most crucial part of my second brain the 40+ hours a week I am using my work computer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cramping Expectations</title>
-      <link>//localhost:1313/posts/cramping-expectations/</link>
+      <link>http://localhost:1313/posts/cramping-expectations/</link>
       <pubDate>Mon, 05 Dec 2022 18:30:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/cramping-expectations/</guid>
+      <guid>http://localhost:1313/posts/cramping-expectations/</guid>
       <description>&lt;p&gt;I have never been a heavy user of social media, but I noticed about a month ago that I was starting to spend more time than usual scrolling. Having an iPhone, I actually have had a time limit setup for over a year, but have ignored it almost every time.&#xA;After I noticed that my mindless scrolling was starting to take away from doing things that I enjoy, and bring me happiness I decided to just delete all social media from my phone. It helps that I talk to all of my friends in dedicated messaging apps, so I did not lose any meaningful connections of mine by making this change.&#xA;Not only was it taking up time I could use better elsewhere, social media has this effect to limit expectations in life. It is great to look up to others, but through the phone screen I end up setting my expectations to what everyone else has accomplished. My work becomes limited by what others have done, and not by what my own mind can create.&#xA;I have struggled the last few months to get content up on this website. Even with potentially the lowest barrier to entry for uploading content, I still feel like I am fishing for ideas on a weekly basis. Since making this change it has gotten slightly better, but I&amp;rsquo;m sure that years of limiting my expectations, while also trying to be somewhat creative are two forces fighting against each other.&#xA;I don&amp;rsquo;t see myself adding back any of the social media apps anytime soon. They were making too big of an impact on what I want to accomplish, hoping that my creativity begins to flourish without having an established ceiling on top of it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The State of My Second Brain</title>
-      <link>//localhost:1313/posts/the-state-of-my-second-brain/</link>
-      <pubDate>Thu, 29 Sep 2022 17:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/the-state-of-my-second-brain/</guid>
+      <link>http://localhost:1313/posts/the-state-of-my-second-brain/</link>
+      <pubDate>Thu, 29 Sep 2022 17:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/the-state-of-my-second-brain/</guid>
       <description>&lt;p&gt;I first discovered the concept of a second brain in the late spring, as I was in the middle of organizing my life. I was dealing with files, tasks, events, and projects that I was thinking about starting. To be honest I wasn’t that disorganized beforehand, but what I was looking for was a structure to follow when new projects or ideas come up. I found that when a new idea would pop in my head, I scrambled to find the best place to at least record that idea.&lt;/p&gt;</description>
     </item>
     <item>
       <title>I Switched to Obsidian</title>
-      <link>//localhost:1313/posts/i-switched-to-obsidian/</link>
-      <pubDate>Tue, 27 Sep 2022 12:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/i-switched-to-obsidian/</guid>
-      <description>&lt;p&gt;Almost 3 months I gave a comprehensive explanation of [[4 Notes/Blog Posts/The State of My Second Brain]], or personal knowledge management system (PKM). At the time I was using &lt;a href=&#34;https://www.notion.so&#34;&gt;Notion&lt;/a&gt; as the heart of everything, but I quickly ran into some of its limitations shortly after that content went live.&lt;/p&gt;&#xA;&lt;p&gt;What I found the most frustrating about Notion, was the need for a internet connection to access your entire workspace. This is not new information, it is one of the biggest complaints about the tool, but in my mind I did not think that I would ever run into this, because we live in 2022. I then realized how often I was inside of large auditoriums where I typically like to take notes (ie. Church, conferences, etc.) and there I didn&amp;rsquo;t have connection to view the entire workspace I had built for over a month. Notion does cache recent and frequent pages that you open, but the whole idea of a PKM is that you can access your whole library, not just what you could access in your first brain (recent and frequent).&lt;/p&gt;</description>
+      <link>http://localhost:1313/posts/i-switched-to-obsidian/</link>
+      <pubDate>Tue, 27 Sep 2022 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/i-switched-to-obsidian/</guid>
+      <description>&lt;p&gt;Almost 3 months I gave a comprehensive explanation of [[4 Notes/Blog Posts/The State of My Second Brain]], or personal knowledge management system (PKM). At the time I was using &lt;a href=&#34;https://www.notion.so&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Notion&lt;/a&gt; as the heart of everything, but I quickly ran into some of its limitations shortly after that content went live.&lt;/p&gt;&#xA;&lt;p&gt;What I found the most frustrating about Notion, was the need for a internet connection to access your entire workspace. This is not new information, it is one of the biggest complaints about the tool, but in my mind I did not think that I would ever run into this, because we live in 2022. I then realized how often I was inside of large auditoriums where I typically like to take notes (ie. Church, conferences, etc.) and there I didn&amp;rsquo;t have connection to view the entire workspace I had built for over a month. Notion does cache recent and frequent pages that you open, but the whole idea of a PKM is that you can access your whole library, not just what you could access in your first brain (recent and frequent).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

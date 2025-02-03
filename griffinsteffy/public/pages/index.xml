@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on </title>
-    <link>//localhost:1313/pages/</link>
-    <description>Recent content in Pages on </description>
+    <title>Pages on Hugo Bootstrap Theme</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on Hugo Bootstrap Theme</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="//localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fitness</title>
-      <link>//localhost:1313/pages/fitness/</link>
+      <link>http://localhost:1313/pages/fitness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/fitness/</guid>
+      <guid>http://localhost:1313/pages/fitness/</guid>
       <description>&lt;p&gt;An info page about Fitness&lt;/p&gt;</description>
     </item>
   </channel>

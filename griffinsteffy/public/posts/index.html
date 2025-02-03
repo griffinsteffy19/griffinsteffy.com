@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
 
@@ -14,14 +14,14 @@
 
     <title>Posts</title>
 
-<meta name="description" content="">
+<meta name="description" content="Hugo theme for a secure, blazing fast and SEO-ready static website, using Bootstrap 5.">
   
 
 
 <link rel="canonical" href="http://localhost:1313/posts/">
 
 
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" hreflang="en-US" href="http://localhost:1313/posts/">
 
 
 
@@ -40,9 +40,11 @@
 
 
 <meta property="og:title" content="Posts">
-<meta property="og:description" content="">
+<meta property="og:description" content="Hugo theme for a secure, blazing fast and SEO-ready static website, using Bootstrap 5.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://localhost:1313/posts/">
+    
+    
   <meta property="og:site_name" content="Hugo Bootstrap Theme">
 
 
@@ -54,9 +56,9 @@
 
 
 
-<meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="">
+
+    <meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="Hugo theme for a secure, blazing fast and SEO-ready static website, using Bootstrap 5.">
 
 
 
@@ -86,6 +88,9 @@
       
       <a class="navbar-brand" href="/">
         
+        <img src="/images/logo.svg" alt="logo" width="30" height="24"
+          class="d-inline-block align-text-top">
+        
         Hugo Bootstrap Theme
       </a>
 
@@ -96,20 +101,163 @@
 
       
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="menu-main navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <ul class="menu-main navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/about" title='Made with ❤️ by the Hugo Bootstrap Theme team' aria-label='Made with ❤️ by the Hugo Bootstrap Theme team'>About</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="/tags/hugo" >
+                  Hugo
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/tags/bootstrap" >
+                  Bootstrap
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/post" >
+                  All
+                </a>
+              </li>
+              </ul>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/page">Docs</a>
+          </li>
+          
+          </ul>
 
         
+        <div class="menu-language order-md-2">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarLanguageDropdown">
+                <li>
+                  <a class="dropdown-item active" aria-current="true" href="/posts/" title='Posts' aria-label='Posts'>
+                    English
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                
+                <li>
+                  <a class="dropdown-item" rel="alternate" href="/pt/" hreflang="pt" lang="pt" title='Hugo Bootstrap Theme' aria-label='Hugo Bootstrap Theme'>
+                    Portuguese
+                  </a>
+                </li>
+                </ul>
+            </li>
+          </ul>
+        </div>
         
+        
+        <div class="menu-social d-flex">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/filipecarneiro/hugo-bootstrap-theme/" target='_blank' title='Visit the GitHub project' aria-label='Visit the GitHub project'>
+                <svg xmlns='http://www.w3.org/2000/svg' class='feather feather-github'><use href='/hugo-bootstrap-theme/images/feather/feather-sprite.svg#github'/></svg><small class="ms-2 d-md-none">GitHub</small>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/jfilipecarneiro/" target='_blank' title='Contact on Twitter' aria-label='Contact on Twitter'>
+                <svg xmlns='http://www.w3.org/2000/svg' class='feather feather-twitter'><use href='/hugo-bootstrap-theme/images/feather/feather-sprite.svg#twitter'/></svg><small class="ms-2 d-md-none">Twitter</small>
+              </a>
+            </li>
+            </ul>
+        </div>
         
 
       </div>
     </div>
   </nav>
 </header><div id="content">
-        
+        <nav class="header-breadcrumb my-2" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb my-0">
+            
+            
+                
+                
+                    
+                
+            
+                    <li class="breadcrumb-item"> <a href="/">Home</a> </li>
+                
+            
+                <li class="breadcrumb-item active" aria-current="page">  Posts</li>
+            
+        </ol>
+    </div>
+</nav>
+
 
 <div class="container py-3">
 
+    
+        <div class="row mb-3">
+
+            
+                <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="/images/feather/feather-sprite.svg#folder"/></svg>
+                    
+                </div>
+            
+
+            
+                <div class="col-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="/images/feather/feather-sprite.svg#tag"/></svg>
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/archive/">Archive</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/book/">Book</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/consumption/">Consumption</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/finance/">Finance</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/griffinsteffy/">GriffinSteffy</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/home/">Home</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/life/">Life</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/productivity/">Productivity</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/recap/">Recap</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/review/">Review</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/technology/">Technology</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/thoughts/">Thoughts</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/video/">Video</a>&nbsp;
+                    
+                        <a class="badge text-bg-light nav-link" href="/tags/written/">Written</a>&nbsp;
+                    
+                </div>
+            
+
+        </div>
     
 
     
@@ -128,7 +276,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -168,7 +316,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -208,7 +356,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -248,7 +396,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -290,7 +438,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -328,7 +476,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -368,7 +516,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -410,7 +558,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -450,7 +598,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -490,7 +638,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -530,7 +678,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -570,7 +718,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -612,7 +760,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -652,7 +800,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -692,7 +840,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -734,7 +882,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -776,7 +924,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -812,7 +960,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -848,7 +996,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -890,7 +1038,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -932,7 +1080,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -974,7 +1122,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -1018,7 +1166,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -1056,7 +1204,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -1094,7 +1242,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -1136,7 +1284,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -1176,7 +1324,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -1216,7 +1364,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -1256,7 +1404,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2025-02-03T08:02:41-0500">February 3, 2025</time>
+                            <time class="ms-2" datetime="2025-02-03T08:20:36-0500">February 3, 2025</time>
 
                             
 
@@ -1305,7 +1453,8 @@
 
 
 
-
+<script src="/js/bootstrap/bootstrap.bundle.min.js" defer></script>
+  
     <script src="/js/main.js" defer></script>
   
 

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on </title>
-    <link>//localhost:1313/projects/</link>
-    <description>Recent content in Projects on </description>
+    <title>Projects on Hugo Bootstrap Theme</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Hugo Bootstrap Theme</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="//localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chicken Coop</title>
-      <link>//localhost:1313/projects/chicken-coop/</link>
+      <link>http://localhost:1313/projects/chicken-coop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/chicken-coop/</guid>
+      <guid>http://localhost:1313/projects/chicken-coop/</guid>
       <description>&lt;p&gt;They always said that chickens were the gateway animal into everything else. Where that might be true, it still sounded like a fun thing for our family to enjoy and learn from.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Homelab</title>
-      <link>//localhost:1313/projects/homelab/</link>
+      <link>http://localhost:1313/projects/homelab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/homelab/</guid>
+      <guid>http://localhost:1313/projects/homelab/</guid>
       <description>&lt;p&gt;Home of all things regarding my home lab setup&lt;/p&gt;&#xA;&lt;h1 id=&#34;nodes&#34;&gt;Nodes&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GM&lt;/li&gt;&#xA;&lt;li&gt;Fullback&lt;/li&gt;&#xA;&lt;li&gt;Quarterback&lt;/li&gt;&#xA;&lt;li&gt;Placekicker&lt;/li&gt;&#xA;&lt;li&gt;Gunner&lt;/li&gt;&#xA;&lt;li&gt;Longsnapper&lt;/li&gt;&#xA;&lt;li&gt;Punter&lt;/li&gt;&#xA;&lt;li&gt;O-coordinator&lt;/li&gt;&#xA;&lt;li&gt;D-coordinator&lt;/li&gt;&#xA;&lt;li&gt;Strong-safety&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;services&#34;&gt;Services&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;portainer&lt;/li&gt;&#xA;&lt;li&gt;nginx-proxy&lt;/li&gt;&#xA;&lt;li&gt;vaultwarden&lt;/li&gt;&#xA;&lt;li&gt;immich&lt;/li&gt;&#xA;&lt;li&gt;synology&#xA;&lt;ul&gt;&#xA;&lt;li&gt;photos&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;plex&lt;/li&gt;&#xA;&lt;li&gt;cloudfare-ddns&lt;/li&gt;&#xA;&lt;li&gt;pihole&lt;/li&gt;&#xA;&lt;li&gt;actual-budget&lt;/li&gt;&#xA;&lt;li&gt;homeassistant&lt;/li&gt;&#xA;&lt;li&gt;eqmx&lt;/li&gt;&#xA;&lt;li&gt;homer&lt;/li&gt;&#xA;&lt;li&gt;grafana/prometheus (old needs work)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;various exporters that were linked to the initial project&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

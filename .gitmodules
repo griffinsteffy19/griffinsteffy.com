@@ -10,9 +10,3 @@
 [submodule "griffinsteffy/themes/beautifulhugo"]
 	path = griffinsteffy/themes/beautifulhugo
 	url = https://github.com/halogenica/beautifulhugo.git
-[submodule "griffinsteffy/themes/gokarna"]
-	path = griffinsteffy/themes/gokarna
-	url = https://github.com/gokarna-theme/gokarna-hugo.git
-[submodule "griffinsteffy/themes/terminal"]
-	path = griffinsteffy/themes/terminal
-	url = https://github.com/panr/hugo-theme-terminal.git

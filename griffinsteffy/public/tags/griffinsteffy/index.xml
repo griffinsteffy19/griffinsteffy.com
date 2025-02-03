@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GriffinSteffy on </title>
-    <link>//localhost:1313/tags/griffinsteffy/</link>
-    <description>Recent content in GriffinSteffy on </description>
+    <title>GriffinSteffy on Hugo Bootstrap Theme</title>
+    <link>http://localhost:1313/tags/griffinsteffy/</link>
+    <description>Recent content in GriffinSteffy on Hugo Bootstrap Theme</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 29 Jan 2025 12:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/griffinsteffy/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <lastBuildDate>Mon, 03 Feb 2025 08:20:36 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/griffinsteffy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Full Pipeline Post</title>
-      <link>//localhost:1313/posts/testing-again/</link>
+      <link>http://localhost:1313/posts/testing-again/</link>
       <pubDate>Wed, 29 Jan 2025 12:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/testing-again/</guid>
-      <description>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;&#xA;&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;//localhost:1313/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/testing-again/</guid>
+      <description>&lt;h1 id=&#34;test-header&#34;&gt;Test Header&lt;/h1&gt;&#xA;&lt;p&gt;Hi There, I&amp;rsquo;m just testing some things, but here is a picture to do that with&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;http://localhost:1313/images/new%20hampshire%20red.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Welcome Post</title>
-      <link>//localhost:1313/posts/welcome/</link>
+      <link>http://localhost:1313/posts/welcome/</link>
       <pubDate>Wed, 29 Jan 2025 10:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/welcome/</guid>
-      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;&#xA;&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;&#xA;&lt;p&gt;This is my favorite Harry Potter House&#xA;!&lt;img src=&#34;//localhost:1313/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/welcome/</guid>
+      <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;&#xA;&lt;p&gt;Hello and welcome to griffinsteffy.com&lt;/p&gt;&#xA;&lt;p&gt;This is my favorite Harry Potter House&#xA;!&lt;img src=&#34;http://localhost:1313/images/gryffindor.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
