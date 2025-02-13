@@ -97,6 +97,12 @@ title = "Griffin Steffy"
     url = "https://buymeacoffee.com/griffin"
     weight = 7
 
+  [[menu.main]]
+    identifier = "rss"
+    pre = "<span data-feather='rss'></span>"
+    url = "/index.xml"
+    weight = 8
+
 [markup]
   [markup.tableOfContents]
     startLevel = 1
